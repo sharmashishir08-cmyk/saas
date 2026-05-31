@@ -1,0 +1,73 @@
+{
+  "_note": "Company enrichments — descriptions and AI earnings excerpts. Populate per ticker. The dashboard handles missing tickers gracefully (shows placeholders).",
+  "_format": {
+    "description": "One-line summary of what the company does",
+    "ai_excerpts": [
+      {
+        "text": "Exact quote or close paraphrase from earnings call",
+        "category": "one of: strength | weakness | opportunity | threat",
+        "speaker": "Name, Title",
+        "quarter": "e.g. Q1 FY2026"
+      }
+    ]
+  },
+  "companies": {
+    "DDOG": {
+      "description": "Cloud-native monitoring, security, and analytics platform. Consumption-based pricing across observability, APM, log management, and security workloads.",
+      "ai_excerpts": [
+        {
+          "text": "[Placeholder] We're seeing significant traction with our LLM observability product — customers instrumenting their AI pipelines are consuming meaningfully more on the platform.",
+          "category": "strength",
+          "speaker": "Olivier Pomel, CEO",
+          "quarter": "Latest"
+        },
+        {
+          "text": "[Placeholder] AI workloads are driving incremental infrastructure complexity, which expands the monitoring surface area our customers need to cover.",
+          "category": "opportunity",
+          "speaker": "Olivier Pomel, CEO",
+          "quarter": "Latest"
+        }
+      ]
+    },
+    "CRM": {
+      "description": "Enterprise CRM and business application platform. Seat-based licensing across Sales Cloud, Service Cloud, Marketing Cloud, and the Salesforce Platform.",
+      "ai_excerpts": [
+        {
+          "text": "[Placeholder] Agentforce is our largest new product bet — autonomous AI agents that handle customer interactions without human intervention.",
+          "category": "opportunity",
+          "speaker": "Marc Benioff, CEO",
+          "quarter": "Latest"
+        },
+        {
+          "text": "[Placeholder] We recognize that as AI agents handle more tasks, the traditional per-seat model may need to evolve toward outcome-based pricing.",
+          "category": "threat",
+          "speaker": "Analyst Q&A",
+          "quarter": "Latest"
+        },
+        {
+          "text": "[Placeholder] Our data cloud and the trust layer give us a defensible position — enterprises won't hand their CRM data to a generic model.",
+          "category": "strength",
+          "speaker": "Marc Benioff, CEO",
+          "quarter": "Latest"
+        }
+      ]
+    },
+    "YEXT": {
+      "description": "Digital presence platform managing business listings, reviews, and pages across search engines and directories.",
+      "ai_excerpts": [
+        {
+          "text": "[Placeholder] The shift from traditional search to AI-generated answers reduces the visibility of structured business listings.",
+          "category": "threat",
+          "speaker": "Analyst Q&A",
+          "quarter": "Latest"
+        },
+        {
+          "text": "[Placeholder] We've launched AI-powered content generation features to help customers maintain digital presence across new surfaces.",
+          "category": "opportunity",
+          "speaker": "CEO",
+          "quarter": "Latest"
+        }
+      ]
+    }
+  }
+}
