@@ -1,5 +1,5 @@
 {
-  "_note": "Company enrichments — descriptions and AI earnings excerpts. Populate per ticker. The dashboard handles missing tickers gracefully (shows placeholders).",
+  "_note": "Company enrichments \u2014 descriptions and AI earnings excerpts. Populate per ticker. The dashboard handles missing tickers gracefully (shows placeholders).",
   "_format": {
     "description": "One-line summary of what the company does",
     "ai_excerpts": [
@@ -16,7 +16,7 @@
       "description": "Cloud-native monitoring, security, and analytics platform. Consumption-based pricing across observability, APM, log management, and security workloads.",
       "ai_excerpts": [
         {
-          "text": "[Placeholder] We're seeing significant traction with our LLM observability product — customers instrumenting their AI pipelines are consuming meaningfully more on the platform.",
+          "text": "[Placeholder] We're seeing significant traction with our LLM observability product \u2014 customers instrumenting their AI pipelines are consuming meaningfully more on the platform.",
           "category": "strength",
           "speaker": "Olivier Pomel, CEO",
           "quarter": "Latest"
@@ -33,7 +33,7 @@
       "description": "Enterprise CRM and business application platform. Seat-based licensing across Sales Cloud, Service Cloud, Marketing Cloud, and the Salesforce Platform.",
       "ai_excerpts": [
         {
-          "text": "[Placeholder] Agentforce is our largest new product bet — autonomous AI agents that handle customer interactions without human intervention.",
+          "text": "[Placeholder] Agentforce is our largest new product bet \u2014 autonomous AI agents that handle customer interactions without human intervention.",
           "category": "opportunity",
           "speaker": "Marc Benioff, CEO",
           "quarter": "Latest"
@@ -45,7 +45,7 @@
           "quarter": "Latest"
         },
         {
-          "text": "[Placeholder] Our data cloud and the trust layer give us a defensible position — enterprises won't hand their CRM data to a generic model.",
+          "text": "[Placeholder] Our data cloud and the trust layer give us a defensible position \u2014 enterprises won't hand their CRM data to a generic model.",
           "category": "strength",
           "speaker": "Marc Benioff, CEO",
           "quarter": "Latest"
@@ -68,6 +68,418 @@
           "quarter": "Latest"
         }
       ]
+    },
+    "EGHT": {
+      "description": "Cloud-based unified communications (UCaaS) and contact center platform for business voice, video, and messaging.",
+      "ai_excerpts": []
+    },
+    "ACIW": {
+      "description": "Payment processing software powering real-time electronic payments for banks, merchants, and billers globally.",
+      "ai_excerpts": []
+    },
+    "ADBE": {
+      "description": "Creative, document, and experience cloud platforms \u2014 Photoshop, Acrobat, and enterprise marketing/analytics suite.",
+      "ai_excerpts": []
+    },
+    "AFRM": {
+      "description": "Buy-now-pay-later platform offering point-of-sale installment loans to consumers via merchant integrations.",
+      "ai_excerpts": []
+    },
+    "ALRM": {
+      "description": "Smart home and business security platform providing SaaS to service providers for connected property solutions.",
+      "ai_excerpts": []
+    },
+    "ALKT": {
+      "description": "Cloud banking platform serving credit unions and community banks with digital account opening, lending, and payments.",
+      "ai_excerpts": []
+    },
+    "AMPL": {
+      "description": "Digital analytics platform helping product and growth teams understand user behavior and optimize digital experiences.",
+      "ai_excerpts": []
+    },
+    "APPF": {
+      "description": "Vertical SaaS for property management \u2014 online leasing, accounting, maintenance, and tenant communication for multifamily and single-family managers.",
+      "ai_excerpts": []
+    },
+    "APPN": {
+      "description": "Low-code automation platform for building enterprise workflows, process mining, and case management applications.",
+      "ai_excerpts": []
+    },
+    "ASAN": {
+      "description": "Work management platform for team coordination \u2014 project tracking, task management, and cross-functional workflows.",
+      "ai_excerpts": []
+    },
+    "TEAM": {
+      "description": "Developer collaboration tools \u2014 Jira (project tracking), Confluence (knowledge management), Bitbucket (code hosting), and Trello.",
+      "ai_excerpts": []
+    },
+    "ADSK": {
+      "description": "Design and engineering software for architecture, construction, manufacturing, and media \u2014 AutoCAD, Revit, Fusion 360.",
+      "ai_excerpts": []
+    },
+    "AVPT": {
+      "description": "SaaS platform for Microsoft 365 data management, governance, migration, and protection across enterprise cloud environments.",
+      "ai_excerpts": []
+    },
+    "BAND": {
+      "description": "Communications platform-as-a-service (CPaaS) providing voice, messaging, and emergency services APIs to enterprises.",
+      "ai_excerpts": []
+    },
+    "BILL": {
+      "description": "Cloud-based accounts payable and receivable automation for SMBs \u2014 invoice processing, payments, and spend management.",
+      "ai_excerpts": []
+    },
+    "BL": {
+      "description": "Cloud financial close management \u2014 automating account reconciliations, intercompany transactions, and compliance for accounting teams.",
+      "ai_excerpts": []
+    },
+    "BLKB": {
+      "description": "Vertical SaaS for nonprofits, education, and faith-based organizations \u2014 fundraising, CRM, financial management, and grantmaking.",
+      "ai_excerpts": []
+    },
+    "BOX": {
+      "description": "Enterprise content management and collaboration platform \u2014 secure file sharing, workflow automation, and e-signatures.",
+      "ai_excerpts": []
+    },
+    "BRZE": {
+      "description": "Customer engagement platform for cross-channel marketing \u2014 email, push, SMS, and in-app messaging with real-time personalization.",
+      "ai_excerpts": []
+    },
+    "AI": {
+      "description": "Enterprise AI application development platform helping organizations build and deploy predictive analytics and generative AI applications.",
+      "ai_excerpts": []
+    },
+    "LAW": {
+      "description": "AI-powered cloud-native legal technology for e-discovery, document review, and case management.",
+      "ai_excerpts": []
+    },
+    "CCLD": {
+      "description": "Healthcare IT platform providing EHR, practice management, revenue cycle management, and patient engagement for medical practices.",
+      "ai_excerpts": []
+    },
+    "NET": {
+      "description": "Cloud infrastructure platform \u2014 CDN, DDoS protection, zero-trust security, serverless compute, and developer tools at the network edge.",
+      "ai_excerpts": []
+    },
+    "BIGC": {
+      "description": "Open SaaS e-commerce platform for building, managing, and scaling online stores with flexible headless and omnichannel capabilities.",
+      "ai_excerpts": []
+    },
+    "COUR": {
+      "description": "Online learning platform offering university courses, professional certificates, and degree programs from global institutions.",
+      "ai_excerpts": []
+    },
+    "CRWD": {
+      "description": "Cloud-native endpoint security platform using AI for threat detection, response, and cyber threat intelligence across the security stack.",
+      "ai_excerpts": []
+    },
+    "DH": {
+      "description": "Healthcare commercial intelligence platform providing data and analytics on hospitals, physicians, and health systems for life sciences and provider markets.",
+      "ai_excerpts": []
+    },
+    "DSGX": {
+      "description": "Supply chain management and logistics technology \u2014 customs/trade compliance, routing, and real-time shipment tracking for global commerce.",
+      "ai_excerpts": []
+    },
+    "DOCN": {
+      "description": "Cloud infrastructure provider for developers and SMBs \u2014 simplified compute, storage, managed databases, and Kubernetes at lower complexity than hyperscalers.",
+      "ai_excerpts": []
+    },
+    "DCBO": {
+      "description": "Learning management system (LMS) for enterprise and association training \u2014 course creation, delivery, and compliance tracking.",
+      "ai_excerpts": []
+    },
+    "DOCU": {
+      "description": "Electronic signature and contract lifecycle management platform \u2014 agreement preparation, signing, management, and notarization.",
+      "ai_excerpts": []
+    },
+    "DOMO": {
+      "description": "Cloud-based business intelligence and data visualization platform connecting data sources for real-time dashboards and reporting.",
+      "ai_excerpts": []
+    },
+    "DBX": {
+      "description": "Cloud file storage, synchronization, and collaboration platform for individuals and business teams.",
+      "ai_excerpts": []
+    },
+    "DT": {
+      "description": "Application performance monitoring and infrastructure observability platform with AI-powered root cause analysis for cloud environments.",
+      "ai_excerpts": []
+    },
+    "ESTC": {
+      "description": "Search, observability, and security platform built on the Elastic Stack (Elasticsearch, Kibana) for log analytics, APM, and SIEM.",
+      "ai_excerpts": []
+    },
+    "EVCM": {
+      "description": "Vertical SaaS for home and field services \u2014 marketing, scheduling, payments, and business management for SMB service providers.",
+      "ai_excerpts": []
+    },
+    "FSLY": {
+      "description": "Edge cloud platform providing CDN, edge compute, security, and real-time content delivery for high-traffic web applications.",
+      "ai_excerpts": []
+    },
+    "FIVN": {
+      "description": "Cloud contact center platform (CCaaS) with AI-powered virtual agents, workforce optimization, and omnichannel customer engagement.",
+      "ai_excerpts": []
+    },
+    "FTV": {
+      "description": "Diversified industrial technology company with software-driven businesses across advanced healthcare, environmental, and operational solutions.",
+      "ai_excerpts": []
+    },
+    "FRSH": {
+      "description": "Cloud-based IT service management, CRM, and customer support software for SMBs and mid-market companies.",
+      "ai_excerpts": []
+    },
+    "GTLB": {
+      "description": "DevSecOps platform \u2014 integrated source code management, CI/CD, security scanning, and project planning in a single application.",
+      "ai_excerpts": []
+    },
+    "GWRE": {
+      "description": "Vertical SaaS for property and casualty insurance \u2014 core policy, billing, and claims management systems for insurers.",
+      "ai_excerpts": []
+    },
+    "HCAT": {
+      "description": "Data and analytics platform for healthcare organizations \u2014 data warehousing, clinical analytics, and cost management for hospitals and health systems.",
+      "ai_excerpts": []
+    },
+    "HSTM": {
+      "description": "Vertical SaaS for healthcare workforce development \u2014 learning management, credentialing, and compliance training for health systems.",
+      "ai_excerpts": []
+    },
+    "HUBS": {
+      "description": "Inbound marketing, sales, and customer service platform \u2014 CRM, marketing automation, content management, and service desk for SMBs.",
+      "ai_excerpts": []
+    },
+    "INTA": {
+      "description": "Vertical SaaS for professional and financial services firms \u2014 deal management, CRM, time tracking, and compliance for law and advisory firms.",
+      "ai_excerpts": []
+    },
+    "FROG": {
+      "description": "DevOps platform for software supply chain management \u2014 binary repository, package management, security scanning, and artifact distribution.",
+      "ai_excerpts": []
+    },
+    "KLTR": {
+      "description": "Video experience platform \u2014 live and on-demand video hosting, webinars, virtual events, and video management for enterprises.",
+      "ai_excerpts": []
+    },
+    "KVYO": {
+      "description": "Marketing automation platform for e-commerce \u2014 email, SMS, push notifications, and customer data platform with deep Shopify integration.",
+      "ai_excerpts": []
+    },
+    "LPSN": {
+      "description": "Conversational AI and messaging platform for enterprise customer engagement \u2014 chatbots, messaging, and voice automation.",
+      "ai_excerpts": []
+    },
+    "MSCI": {
+      "description": "Financial data and analytics provider \u2014 equity indexes (MSCI World, EM), ESG ratings, portfolio risk analytics, and real estate benchmarks.",
+      "ai_excerpts": []
+    },
+    "MNDY": {
+      "description": "Work operating system for team collaboration \u2014 project management, workflows, dashboards, and automations across business functions.",
+      "ai_excerpts": []
+    },
+    "MDB": {
+      "description": "Developer data platform built around the document database MongoDB Atlas \u2014 cloud database, search, vector, and stream processing.",
+      "ai_excerpts": []
+    },
+    "NCNO": {
+      "description": "Vertical SaaS for banking \u2014 cloud-based loan origination, account opening, and deposit management for financial institutions.",
+      "ai_excerpts": []
+    },
+    "NTNX": {
+      "description": "Hybrid multicloud infrastructure platform \u2014 hyperconverged compute, storage, and virtualization with one-click simplicity.",
+      "ai_excerpts": []
+    },
+    "OKTA": {
+      "description": "Identity and access management platform \u2014 single sign-on, multi-factor authentication, and zero-trust identity for workforce and customers.",
+      "ai_excerpts": []
+    },
+    "ORCL": {
+      "description": "Enterprise database, cloud infrastructure, and application suite \u2014 Oracle Database, OCI, ERP Cloud, HCM Cloud, and NetSuite.",
+      "ai_excerpts": []
+    },
+    "PTC": {
+      "description": "Industrial software for product lifecycle management (PLM), CAD, IoT, and augmented reality \u2014 Windchill, Creo, ThingWorx, Vuforia.",
+      "ai_excerpts": []
+    },
+    "PD": {
+      "description": "Digital operations management platform \u2014 incident response, on-call scheduling, event intelligence, and automation for DevOps and IT teams.",
+      "ai_excerpts": []
+    },
+    "PANW": {
+      "description": "Cybersecurity platform \u2014 network security, cloud security, and AI-driven security operations across firewalls, SASE, and XDR.",
+      "ai_excerpts": []
+    },
+    "PAYC": {
+      "description": "Cloud HCM platform for mid-market \u2014 payroll, HR, talent management, time tracking, and workforce management in a single application.",
+      "ai_excerpts": []
+    },
+    "PCTY": {
+      "description": "Cloud payroll and HCM platform for SMBs and mid-market \u2014 payroll processing, benefits administration, talent, and workforce management.",
+      "ai_excerpts": []
+    },
+    "PEGA": {
+      "description": "Enterprise low-code platform for business process automation, CRM, case management, and AI-powered decisioning.",
+      "ai_excerpts": []
+    },
+    "PCOR": {
+      "description": "Vertical SaaS for construction \u2014 project management, financials, quality and safety, and workforce management for general contractors.",
+      "ai_excerpts": []
+    },
+    "QTWO": {
+      "description": "Vertical SaaS for banking \u2014 digital banking platform, lending, and account-switching solutions for banks and credit unions.",
+      "ai_excerpts": []
+    },
+    "QLYS": {
+      "description": "Cloud-based vulnerability management and compliance platform \u2014 asset discovery, scanning, detection, and response for IT security.",
+      "ai_excerpts": []
+    },
+    "RPD": {
+      "description": "Cybersecurity analytics and automation platform \u2014 vulnerability management, SIEM, SOAR, and cloud security for threat detection and response.",
+      "ai_excerpts": []
+    },
+    "RNG": {
+      "description": "Cloud communications platform (UCaaS/CCaaS) \u2014 business phone, video conferencing, messaging, and contact center in one platform.",
+      "ai_excerpts": []
+    },
+    "RSKD": {
+      "description": "E-commerce risk management platform \u2014 AI-powered fraud detection, chargeback protection, and payment optimization for online merchants.",
+      "ai_excerpts": []
+    },
+    "ROP": {
+      "description": "Diversified technology conglomerate acquiring vertical software and data-analytics businesses across healthcare, legal, insurance, and more.",
+      "ai_excerpts": []
+    },
+    "RBRK": {
+      "description": "Zero-trust data security platform \u2014 backup, recovery, and cyber-resilience for enterprise data across cloud, SaaS, and on-premises environments.",
+      "ai_excerpts": []
+    },
+    "SAP": {
+      "description": "Enterprise application software \u2014 ERP, supply chain, HCM, and business technology platform for large enterprises globally (S/4HANA Cloud).",
+      "ai_excerpts": []
+    },
+    "SPSC": {
+      "description": "EDI and supply chain management SaaS \u2014 electronic trading partner connections, analytics, and fulfillment for retailers and suppliers.",
+      "ai_excerpts": []
+    },
+    "IOT": {
+      "description": "Connected operations platform for physical assets \u2014 IoT sensors, fleet tracking, video monitoring, and industrial equipment management.",
+      "ai_excerpts": []
+    },
+    "S": {
+      "description": "AI-powered cybersecurity platform \u2014 autonomous endpoint protection, cloud workload security, and identity threat detection using a unified data lake.",
+      "ai_excerpts": []
+    },
+    "NOW": {
+      "description": "Enterprise workflow automation platform \u2014 IT service management, HR delivery, customer service, and business process automation at scale.",
+      "ai_excerpts": []
+    },
+    "TTAN": {
+      "description": "Vertical SaaS for home and commercial field services \u2014 dispatching, scheduling, CRM, invoicing, and marketing for trades businesses.",
+      "ai_excerpts": []
+    },
+    "SHOP": {
+      "description": "Commerce platform for merchants \u2014 online stores, point-of-sale, payments processing, shipping, and capital for businesses of all sizes.",
+      "ai_excerpts": []
+    },
+    "SNOW": {
+      "description": "Cloud data platform \u2014 data warehousing, data lake, data engineering, data science, and data sharing with consumption-based pricing.",
+      "ai_excerpts": []
+    },
+    "CXM": {
+      "description": "Unified customer experience management platform \u2014 social media management, customer care, marketing, and AI-powered insights for large enterprises.",
+      "ai_excerpts": []
+    },
+    "SPT": {
+      "description": "Social media management platform \u2014 publishing, engagement, analytics, listening, and advocacy tools for marketing and customer care teams.",
+      "ai_excerpts": []
+    },
+    "TENB": {
+      "description": "Cyber exposure management platform \u2014 vulnerability assessment, web app scanning, cloud security, identity exposure, and attack surface management.",
+      "ai_excerpts": []
+    },
+    "TDC": {
+      "description": "Enterprise analytics database \u2014 cloud and hybrid data warehousing, advanced analytics, and data management for large-scale workloads.",
+      "ai_excerpts": []
+    },
+    "TTD": {
+      "description": "Demand-side advertising platform \u2014 programmatic media buying across connected TV, display, video, audio, and mobile for advertisers globally.",
+      "ai_excerpts": []
+    },
+    "TOST": {
+      "description": "Vertical platform for restaurants \u2014 cloud POS, payments processing, online ordering, payroll, marketing, and operations management.",
+      "ai_excerpts": []
+    },
+    "TWLO": {
+      "description": "Cloud communications platform (CPaaS) \u2014 programmable voice, SMS, email (SendGrid), and video APIs plus customer data platform (Segment).",
+      "ai_excerpts": []
+    },
+    "TYL": {
+      "description": "Vertical SaaS for state and local government \u2014 ERP, courts and justice, public safety, tax, and citizen engagement software.",
+      "ai_excerpts": []
+    },
+    "PATH": {
+      "description": "Enterprise robotic process automation (RPA) and AI platform \u2014 software robots automating repetitive business processes.",
+      "ai_excerpts": []
+    },
+    "UPLD": {
+      "description": "Portfolio of cloud-based work management and content tools \u2014 document automation, knowledge management, and digital media solutions.",
+      "ai_excerpts": []
+    },
+    "VRNS": {
+      "description": "Data security and analytics platform \u2014 automated data protection, threat detection, and compliance for unstructured data across files and emails.",
+      "ai_excerpts": []
+    },
+    "VEEV": {
+      "description": "Vertical SaaS for life sciences \u2014 CRM, content management, regulatory, quality, and clinical data management for pharma and biotech.",
+      "ai_excerpts": []
+    },
+    "VRSK": {
+      "description": "Data analytics and risk assessment for insurance, energy, and financial services \u2014 actuarial models, claims analytics, and catastrophe modeling.",
+      "ai_excerpts": []
+    },
+    "VERI": {
+      "description": "Enterprise AI platform for media and content analytics \u2014 synthetic media detection, content licensing, and AI model deployment.",
+      "ai_excerpts": []
+    },
+    "VERX": {
+      "description": "Cloud tax technology \u2014 automated indirect tax calculation, compliance, and reporting for enterprise ERP and e-commerce systems.",
+      "ai_excerpts": []
+    },
+    "WAY": {
+      "description": "Vertical SaaS for healthcare revenue cycle management \u2014 claims processing, payment automation, and financial analytics for providers and payers.",
+      "ai_excerpts": []
+    },
+    "WEAV": {
+      "description": "Vertical SaaS for small healthcare and dental practices \u2014 patient communication, scheduling, payments, phone, and reviews in one platform.",
+      "ai_excerpts": []
+    },
+    "WIX": {
+      "description": "Website creation and management platform \u2014 drag-and-drop editor, e-commerce, hosting, domains, and business tools for SMBs and creators.",
+      "ai_excerpts": []
+    },
+    "WDAY": {
+      "description": "Cloud enterprise platform for HR and finance \u2014 human capital management, payroll, financial management, and workforce planning.",
+      "ai_excerpts": []
+    },
+    "WK": {
+      "description": "Cloud platform for regulatory compliance and reporting \u2014 SEC filings, ESG reporting, audit management, and internal controls.",
+      "ai_excerpts": []
+    },
+    "ZD": {
+      "description": "Digital media and internet company \u2014 portfolio of technology brands in cybersecurity (Ziff Davis), healthcare, shopping, and connectivity.",
+      "ai_excerpts": []
+    },
+    "ZM": {
+      "description": "Video-first unified communications platform \u2014 video meetings, team chat, phone, webinars, and AI-powered collaboration tools.",
+      "ai_excerpts": []
+    },
+    "GTM": {
+      "description": "B2B data intelligence platform \u2014 contact and company data, intent signals, and workflow tools for go-to-market sales and marketing teams.",
+      "ai_excerpts": []
+    },
+    "ZS": {
+      "description": "Cloud security platform \u2014 zero-trust network access (ZTNA), secure web gateway, cloud workload protection via a global security cloud.",
+      "ai_excerpts": []
     }
   }
 }
