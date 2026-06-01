@@ -65,6 +65,19 @@ svg{display:block;width:100%;height:auto}
 .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-family:"JetBrains Mono",monospace;font-size:11px;padding:8px 10px;border-radius:3px;opacity:0;transition:opacity .1s;white-space:nowrap;z-index:5;line-height:1.5}
 .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--ink-soft)}
 .legend span{display:flex;align-items:center;gap:5px}.dotk{width:9px;height:9px;border-radius:50%;display:inline-block}
+.key-reads{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink);background:#fff;
+  border:1px solid var(--rule);border-radius:3px;padding:10px 14px;margin:8px 0;line-height:1.8}
+.key-reads .kr-label{color:var(--ink-soft);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase}
+.key-reads .kr-val{font-weight:700}.kr-pos{color:var(--pos)}.kr-neg{color:var(--neg)}.kr-acc{color:var(--accent)}
+.cat-med{margin-top:14px;background:#fff;border:1px solid var(--rule);border-radius:3px;padding:12px 14px}
+.cat-med .cm-title{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px}
+.cat-bar{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-family:"JetBrains Mono",monospace;font-size:11px}
+.cat-bar:last-child{margin-bottom:0}
+.cat-bar .cb-label{width:65px;text-align:right;color:var(--ink-soft);font-size:10px;text-transform:uppercase;flex-shrink:0}
+.cat-bar .cb-track{flex:1;height:18px;background:var(--paper);border-radius:2px;position:relative;overflow:hidden}
+.cat-bar .cb-fill{height:100%;border-radius:2px;transition:width .3s}
+.cat-bar .cb-val{font-weight:700;width:40px;flex-shrink:0;text-align:right}
+.regline{stroke:var(--ink);stroke-width:1.2;stroke-dasharray:6 4;opacity:.4}
 
 /* table */
 .tablebox{background:#fff;border:1px solid var(--rule);border-radius:3px;overflow:hidden}
@@ -165,6 +178,7 @@ footer{margin-top:40px;font-family:"JetBrains Mono",monospace;font-size:10.5px;c
     <div class="grid">
       <div>
         <div class="panel-title">Scatter</div>
+        <div id="key-reads" class="key-reads"></div>
         <div class="panel-sub">
           <span class="ctl-label">x</span><select class="ax" id="ax-x"></select>
           <span class="ctl-label">y</span><select class="ax" id="ax-y"></select>
@@ -177,6 +191,7 @@ footer{margin-top:40px;font-family:"JetBrains Mono",monospace;font-size:10.5px;c
           <span><i class="dotk" style="background:var(--i)"></i>Infrastructure</span>
           <span><i class="dotk" style="background:var(--s)"></i>Security</span>
         </div>
+        <div id="cat-medians"></div>
       </div>
       <div>
         <div class="panel-title">Comparables</div>
@@ -206,7 +221,7 @@ const PURCLR={'pure-saas':null,'payments-blended':'#b06a2c','lending':'#8a2f4a',
 function cv(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
 
 let DATA=[],ENRICH={},overrides=ld('comps_overrides_v1',{}),notes=ld('comps_notes_v1',{}),
-    state={cls:'all',growth:'all',clean:false,reviewOnly:false,q:'',sortK:'r40_ebitda',sortDir:-1,edit:false,axX:'rev_growth',axY:'ebitda_margin',axS:'mcap_m'};
+    state={cls:'all',growth:'all',clean:false,reviewOnly:false,q:'',sortK:'r40_ebitda',sortDir:-1,edit:false,axX:'rev_growth',axY:'ev_rev',axS:'mcap_m'};
 
 function ld(k,f){try{return JSON.parse(localStorage.getItem(k))||f;}catch(e){return f;}}
 function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
@@ -219,7 +234,7 @@ function initAxes(){['ax-x','ax-y','ax-s'].forEach(id=>{const sel=document.getEl
   sel.innerHTML=Object.entries(FIELDS).map(([k,v])=>`<option value="${k}">${v.label}</option>`).join('');});
   document.getElementById('ax-x').value=state.axX;document.getElementById('ax-y').value=state.axY;document.getElementById('ax-s').value=state.axS;
   ['ax-x','ax-y','ax-s'].forEach(id=>document.getElementById(id).addEventListener('change',e=>{
-    state[id==='ax-x'?'axX':id==='ax-y'?'axY':'axS']=e.target.value;renderScatter();}));}
+    state[id==='ax-x'?'axX':id==='ax-y'?'axY':'axS']=e.target.value;renderScatter();renderKeyReads();renderCatMedians();}));}
 
 Promise.all([
   fetch('./data/companies.json').then(r=>r.json()),
@@ -235,7 +250,17 @@ function filtered(){return DATA.filter(c=>{const e=eff(c);
   if(state.clean&&!e.clean)return false;if(state.reviewOnly&&!e.review)return false;
   if(state.q){const s=state.q.toLowerCase();if(!c.ticker.toLowerCase().includes(s)&&!c.name.toLowerCase().includes(s))return false;}return true;});}
 function median(a){if(!a.length)return null;const s=[...a].sort((x,y)=>x-y);const m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2;}
-function render(){renderStats();renderScatter();renderTable();
+function linreg(pts,kx,ky){const n=pts.length;if(n<3)return null;let sx=0,sy=0,sxy=0,sxx=0,syy=0;
+  pts.forEach(p=>{const x=p[kx],y=p[ky];sx+=x;sy+=y;sxy+=x*y;sxx+=x*x;syy+=y*y;});
+  const denom=n*sxx-sx*sx;if(Math.abs(denom)<1e-10)return null;
+  const slope=(n*sxy-sx*sy)/denom,intercept=(sy-slope*sx)/n;
+  const ssRes=pts.reduce((s,p)=>{const e=p[ky]-(slope*p[kx]+intercept);return s+e*e;},0);
+  const ssTot=pts.reduce((s,p)=>{const e=p[ky]-sy/n;return s+e*e;},0);
+  const r2=ssTot>0?1-ssRes/ssTot:0;
+  const residuals=pts.map(p=>({ticker:p.ticker,name:p.name,actual:p[ky],expected:slope*p[kx]+intercept,residual:p[ky]-(slope*p[kx]+intercept),xv:p[kx]}));
+  residuals.sort((a,b)=>b.residual-a.residual);
+  return{slope,intercept,r2,predict:x=>slope*x+intercept,residuals};}
+function render(){renderStats();renderScatter();renderKeyReads();renderCatMedians();renderTable();
   document.getElementById('rev-count').textContent=DATA.filter(c=>eff(c).review).length;
   document.getElementById('foot').innerHTML='Data: SEG SaaS Index (Tiingo), TTM. Click any ticker to see earnings call takeaways, AI impact assessment, and company notes.';}
 function renderStats(){const f=filtered();document.getElementById('stats').innerHTML=[
@@ -262,7 +287,12 @@ function renderScatter(){
   if(fk==='rev_growth'&&fky==='ebitda_margin'){const x1=xr.mn,x2=xr.mx;
     s.push(`<line class="r40line" x1="${X(x1)}" y1="${Y(40-x1)}" x2="${X(x2)}" y2="${Y(40-x2)}"/>`);
     s.push(`<text class="axis-label" x="${X(x2)-4}" y="${Y(40-x2)-6}" text-anchor="end" fill="${cv('--accent')}">R40</text>`);}
-  s.push(`<text class="axis-label" x="${W/2}" y="${H-4}" text-anchor="middle">${FIELDS[fk].label}</text>`);
+  // regression line
+  const reg=linreg(f.filter(c=>c[fk]!=null&&c[fky]!=null),fk,fky);
+  if(reg){const ry1=reg.predict(xr.mn),ry2=reg.predict(xr.mx);
+    s.push(`<line class="regline" x1="${X(xr.mn)}" y1="${Y(ry1)}" x2="${X(xr.mx)}" y2="${Y(ry2)}"/>`);
+    s.push(`<text class="axis-label" x="${X(xr.mx)-4}" y="${Y(ry2)+14}" text-anchor="end" style="opacity:.5;font-size:9px">trend</text>`);}
+  window._lastReg=reg;window._lastFk=fk;window._lastFky=fky;  s.push(`<text class="axis-label" x="${W/2}" y="${H-4}" text-anchor="middle">${FIELDS[fk].label}</text>`);
   s.push(`<text class="axis-label" transform="translate(12,${H/2}) rotate(-90)" text-anchor="middle">${FIELDS[fky].label}</text>`);
   const fset=new Set(f.map(c=>c.ticker));
   pts.forEach(c=>{const e=eff(c),ins=fset.has(c.ticker);
@@ -275,6 +305,46 @@ function renderScatter(){
       const r=box.getBoundingClientRect();tip.style.left=Math.min(ev.clientX-r.left+12,r.width-220)+'px';tip.style.top=(ev.clientY-r.top+12)+'px';tip.style.opacity=1;});
     d.addEventListener('mouseleave',()=>tip.style.opacity=0);
     d.addEventListener('click',()=>navDetail(d.dataset.tk));});
+}
+
+/* key reads */
+function renderKeyReads(){
+  const el=document.getElementById('key-reads');
+  const reg=window._lastReg,fk=window._lastFk,fky=window._lastFky;
+  if(!reg||!reg.residuals.length){el.innerHTML='';return;}
+  const isValGrowth=fk==='rev_growth'&&fky==='ev_rev';
+  const over=reg.residuals[0],under=reg.residuals[reg.residuals.length-1];
+  let html='<span class="kr-label">Key reads</span><br>';
+  if(isValGrowth){
+    const premium=(reg.slope*10).toFixed(1);
+    html+=`Each 10pp of growth ≈ <span class="kr-val">${premium}x</span> of EV/Revenue · `;
+    html+=`Richest for growth: <span class="kr-val kr-acc">${over.ticker}</span> (${over.actual.toFixed(1)}x on ${over.xv}% vs ${over.expected.toFixed(1)}x implied) · `;
+    html+=`Cheapest for growth: <span class="kr-val kr-pos">${under.ticker}</span> (${under.actual.toFixed(1)}x on ${under.xv}% vs ${under.expected.toFixed(1)}x implied)`;
+  }else{
+    html+=`R² = <span class="kr-val">${reg.r2.toFixed(2)}</span> · `;
+    html+=`Highest above trend: <span class="kr-val kr-acc">${over.ticker}</span> · `;
+    html+=`Lowest below trend: <span class="kr-val kr-pos">${under.ticker}</span>`;
+  }
+  el.innerHTML=html;
+}
+
+/* category medians */
+function renderCatMedians(){
+  const el=document.getElementById('cat-medians');
+  const f=filtered();
+  const fky=state.axY,lab=FIELDS[fky]?.label||fky,suf=FIELDS[fky]?.suf||'';
+  const cats=['horizontal','vertical','infrastructure','security'];
+  const data=cats.map(cls=>{
+    const vals=f.filter(c=>eff(c).vh===cls&&c[fky]!=null).map(c=>c[fky]);
+    return{cls,med:median(vals),n:vals.length};
+  });
+  const maxMed=Math.max(...data.map(d=>Math.abs(d.med||0)),0.1);
+  el.innerHTML=`<div class="cat-med"><div class="cm-title">Median ${lab} by class (${f.length} filtered)</div>${
+    data.map(d=>`<div class="cat-bar">
+      <span class="cb-label">${d.cls.slice(0,5)}</span>
+      <span class="cb-track"><span class="cb-fill" style="width:${d.med!=null?Math.max(2,Math.abs(d.med)/maxMed*100):0}%;background:${HUE[d.cls]}"></span></span>
+      <span class="cb-val">${d.med!=null?d.med.toFixed(1)+suf:'—'}</span>
+    </div>`).join('')}</div>`;
 }
 
 /* table */
