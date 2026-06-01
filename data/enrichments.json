@@ -191,7 +191,55 @@
       "description": "Payment processing software powering real-time electronic payments for banks, merchants, and billers globally."
     },
     "ADBE": {
-      "description": "Creative, document, and experience cloud platforms \u2014 Photoshop, Acrobat, and enterprise marketing/analytics suite."
+      "description": "Creative, document, and experience cloud platforms \u2014 Photoshop, Acrobat, and enterprise marketing/analytics suite.",
+      "latest_call": {
+        "quarter": "Q2 FY2025",
+        "date": "2025-06-12",
+        "overall_swot": {
+          "strengths": [
+            "89.4% gross margin with 40.9% EBITDA \u2014 among the most profitable software companies globally",
+            "Creative Cloud monopoly in professional design (Photoshop, Illustrator, Premiere) with deep workflow lock-in",
+            "$100B market cap and 13.7% growth \u2014 rare combination of scale and mid-teens expansion",
+            "Document Cloud (Acrobat/PDF) is an underappreciated recurring revenue engine with near-zero competition"
+          ],
+          "weaknesses": [
+            "YTD price decline of -26.6% reflects market anxiety about AI disruption to creative workflows",
+            "Figma acquisition failure left a strategic gap in collaborative design",
+            "Revenue growth decelerating \u2014 13.7% is solid but trending lower from the pandemic-era peaks"
+          ],
+          "opportunities": [
+            "Firefly (generative AI) commercially safe with IP indemnification \u2014 a genuine enterprise differentiator vs. Midjourney/Stable Diffusion",
+            "AI features driving upsell to higher-tier Creative Cloud plans at premium pricing",
+            "Experience Cloud (analytics, personalization, commerce) is an undermonetized enterprise platform"
+          ],
+          "threats": [
+            "Generative AI tools (Midjourney, DALL-E, Canva AI) democratizing design tasks previously requiring Photoshop expertise",
+            "Canva expanding aggressively into the prosumer and enterprise space Adobe historically owned",
+            "Free and open-source AI image generation tools lowering the floor for acceptable quality"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Firefly trained exclusively on licensed/owned content \u2014 the only major generative AI model with clear IP provenance",
+            "AI features integrated natively into existing tools (Generative Fill in Photoshop, Generative Expand) \u2014 not a separate product",
+            "Massive proprietary dataset from Adobe Stock creates a training data moat competitors can't easily replicate"
+          ],
+          "weaknesses": [
+            "AI makes simpler design tasks accessible to non-designers \u2014 potentially shrinking the addressable user base for professional tools",
+            "Firefly quality still trails Midjourney/DALL-E for some use cases, particularly photorealistic generation"
+          ],
+          "opportunities": [
+            "AI-powered video generation and editing (Premiere, After Effects) is the next frontier with massive TAM",
+            "Enterprise demand for commercially safe AI content generation growing \u2014 Adobe is uniquely positioned",
+            "AI as a premium pricing lever \u2014 new AI-powered plan tiers can expand ARPU beyond traditional subscriptions"
+          ],
+          "threats": [
+            "If AI-generated design becomes commodity-quality, the premium for professional tools like Photoshop erodes",
+            "Open-source image models (Stable Diffusion, Flux) improving rapidly with community-driven innovation",
+            "Apple, Google, and other platform companies embedding AI creative tools directly into their operating systems"
+          ]
+        }
+      }
     },
     "AFRM": {
       "description": "Buy-now-pay-later platform offering point-of-sale installment loans to consumers via merchant integrations."
@@ -215,7 +263,54 @@
       "description": "Work management platform for team coordination \u2014 project tracking, task management, and cross-functional workflows."
     },
     "TEAM": {
-      "description": "Developer collaboration tools \u2014 Jira (project tracking), Confluence (knowledge management), Bitbucket (code hosting), and Trello."
+      "description": "Developer collaboration tools \u2014 Jira (project tracking), Confluence (knowledge management), Bitbucket (code hosting), and Trello.",
+      "latest_call": {
+        "quarter": "Q3 FY2025",
+        "date": "2025-04-24",
+        "overall_swot": {
+          "strengths": [
+            "24.7% revenue growth with 84% gross margin \u2014 strong SaaS economics at scale",
+            "Jira is the de facto standard for software project management \u2014 deep developer workflow lock-in",
+            "120% NRR driven by cloud migration and cross-selling Confluence, Loom, and Jira Service Management",
+            "Cloud migration from Server/Data Center creating a large, visible revenue tailwind"
+          ],
+          "weaknesses": [
+            "EBITDA margin at -0.3% \u2014 essentially breakeven despite $22.5B market cap and high gross margins",
+            "Recent acquisitions (Loom, AgileCraft) require integration and haven't proven incremental value yet",
+            "Server product end-of-life creating a forced migration that risks customer churn to competitors"
+          ],
+          "opportunities": [
+            "Jira Service Management competing with ServiceNow in ITSM \u2014 attacking from developer teams outward",
+            "Atlassian Intelligence (AI) features embedded across all products with upsell potential",
+            "Enterprise tier expansion \u2014 historically strong in SMB/mid-market, now pushing into large enterprise"
+          ],
+          "threats": [
+            "Linear, Notion, and Monday.com competing with modern UX in project management \u2014 especially with engineering teams",
+            "GitLab and GitHub offering integrated project management within the development platform",
+            "AI coding assistants (Copilot, Cursor) could reduce the number of tasks/tickets flowing through Jira"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Atlassian Intelligence embedded across Jira, Confluence, and JSM \u2014 AI assistance native to the workflow",
+            "Massive dataset of how millions of teams organize work \u2014 valuable for AI-powered workflow optimization"
+          ],
+          "weaknesses": [
+            "AI features are productivity enhancements (summarization, search, suggestions) \u2014 not transformative product shifts",
+            "Loom acquisition was partly an AI bet (async video) but integration and AI enhancement still early"
+          ],
+          "opportunities": [
+            "AI-powered project planning \u2014 automatic task breakdown, effort estimation, and dependency mapping from natural language requirements",
+            "AI agents that autonomously triage, route, and resolve service desk tickets within Jira Service Management",
+            "AI-generated documentation in Confluence \u2014 reducing the manual effort that makes knowledge bases stale"
+          ],
+          "threats": [
+            "If AI coding assistants dramatically increase developer productivity, fewer Jira tickets are needed \u2014 volume declines",
+            "GitHub Copilot Workspace and similar AI-native dev environments could subsume project management into the IDE",
+            "AI could make simpler project management tools good enough \u2014 reducing the need for Jira's complexity"
+          ]
+        }
+      }
     },
     "ADSK": {
       "description": "Design and engineering software for architecture, construction, manufacturing, and media \u2014 AutoCAD, Revit, Fusion 360."
@@ -251,7 +346,53 @@
       "description": "Healthcare IT platform providing EHR, practice management, revenue cycle management, and patient engagement for medical practices."
     },
     "NET": {
-      "description": "Cloud infrastructure platform \u2014 CDN, DDoS protection, zero-trust security, serverless compute, and developer tools at the network edge."
+      "description": "Cloud infrastructure platform \u2014 CDN, DDoS protection, zero-trust security, serverless compute, and developer tools at the network edge.",
+      "latest_call": {
+        "quarter": "Q1 FY2025",
+        "date": "2025-05-01",
+        "overall_swot": {
+          "strengths": [
+            "31.6% revenue growth with global network edge spanning 300+ cities \u2014 infrastructure moat",
+            "Developer-first platform strategy builds bottom-up adoption ahead of enterprise procurement",
+            "Workers (serverless compute) and R2 (object storage) expanding TAM beyond CDN/security origins",
+            "Net retention at 119% with strong land-and-expand across product portfolio"
+          ],
+          "weaknesses": [
+            "9% EBITDA margin \u2014 one of the thinnest margins in the infrastructure cohort at this scale",
+            "Sales motion still maturing for large enterprise \u2014 historically stronger in developer/SMB",
+            "R2 storage pricing strategy (no egress fees) compresses potential revenue per unit"
+          ],
+          "opportunities": [
+            "AI inference at the edge \u2014 models running on Cloudflare's global network closer to users",
+            "Workers AI positioning Cloudflare as the developer-friendly alternative to hyperscaler AI infrastructure",
+            "Zero Trust/SASE competing with Zscaler and Palo Alto with a fundamentally different (network-native) architecture"
+          ],
+          "threats": [
+            "Hyperscalers (AWS CloudFront, Azure CDN, GCP Cloud CDN) competing on CDN with bundling leverage",
+            "Fastly and Akamai competing on edge compute; market fragmentation risk",
+            "Enterprise sales execution remains unproven at the scale needed to justify the valuation"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Global edge network is uniquely positioned for AI inference \u2014 low-latency model serving at the edge",
+            "Workers AI allows developers to run AI models on Cloudflare's network with minimal configuration",
+            "AI Gateway product provides observability, caching, and rate limiting for AI API calls"
+          ],
+          "weaknesses": [
+            "No proprietary AI models or training infrastructure \u2014 dependent on open-source and third-party models",
+            "Edge inference is still early and unproven at scale compared to centralized GPU clusters"
+          ],
+          "opportunities": [
+            "Every AI application needs a network layer \u2014 Cloudflare could be the default infrastructure for AI-powered web apps",
+            "AI-driven traffic growth (API calls, model serving, data processing) directly increases consumption on Cloudflare's network"
+          ],
+          "threats": [
+            "If AI inference consolidates in centralized clouds rather than distributing to the edge, Cloudflare's AI thesis weakens",
+            "Hyperscalers building their own edge inference (AWS Inferentia, Azure Edge) with integrated model hosting"
+          ]
+        }
+      }
     },
     "BIGC": {
       "description": "Open SaaS e-commerce platform for building, managing, and scaling online stores with flexible headless and omnichannel capabilities."
@@ -260,7 +401,52 @@
       "description": "Online learning platform offering university courses, professional certificates, and degree programs from global institutions."
     },
     "CRWD": {
-      "description": "Cloud-native endpoint security platform using AI for threat detection, response, and cyber threat intelligence across the security stack."
+      "description": "Cloud-native endpoint security platform using AI for threat detection, response, and cyber threat intelligence across the security stack.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-06-03",
+        "overall_swot": {
+          "strengths": [
+            "Revenue growth of 29% with 74.7% gross margins and rapidly expanding module adoption",
+            "Net retention at 115% with customers adopting 5+ modules accelerating",
+            "Platform consolidation leader \u2014 single-agent architecture is a genuine moat vs. point-product competitors",
+            "$167B market cap reflects market confidence in the endpoint-to-cloud security platform thesis"
+          ],
+          "weaknesses": [
+            "EBITDA margin at 4.1% remains thin for this scale \u2014 reinvestment intensity is high",
+            "Premium pricing creates SMB penetration challenge; Falcon is enterprise-first",
+            "CrowdStrike-branded outage (July 2024) still a reputational overhang with some procurement teams"
+          ],
+          "opportunities": [
+            "Cloud security (CNAPP) and identity protection are large, early-stage TAM expansions",
+            "SIEM replacement with LogScale/Next-Gen SIEM directly attacks Splunk's installed base",
+            "International markets underpenetrated \u2014 EMEA and APAC expansion runway significant"
+          ],
+          "threats": [
+            "Microsoft Defender bundled with E5 licenses at zero marginal cost remains the structural competitive threat",
+            "SentinelOne competing aggressively on price in mid-market and MDR",
+            "Macro-driven budget scrutiny could slow multi-module adoption velocity"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Charlotte AI assistant already in production \u2014 AI applied to analyst workflow acceleration, not just marketing",
+            "Proprietary threat graph built on trillions of daily events is a genuine AI training data moat",
+            "Single lightweight agent architecture enables faster AI feature deployment vs. multi-agent competitors"
+          ],
+          "weaknesses": [
+            "AI-driven automation may reduce need for large SOC teams \u2014 the same customers who buy seats"
+          ],
+          "opportunities": [
+            "AI-driven automated threat hunting and response could command premium pricing as a distinct SKU",
+            "Generative AI increases attack surface and social engineering sophistication \u2014 growing the problem CrowdStrike solves"
+          ],
+          "threats": [
+            "If AI enables good-enough security at lower complexity, the consolidation premium erodes",
+            "Microsoft investing heavily in Security Copilot \u2014 bundled AI security with the OS vendor is hard to counter"
+          ]
+        }
+      }
     },
     "DH": {
       "description": "Healthcare commercial intelligence platform providing data and analytics on hospitals, physicians, and health systems for life sciences and provider markets."
@@ -275,7 +461,53 @@
       "description": "Learning management system (LMS) for enterprise and association training \u2014 course creation, delivery, and compliance tracking."
     },
     "DOCU": {
-      "description": "Electronic signature and contract lifecycle management platform \u2014 agreement preparation, signing, management, and notarization."
+      "description": "Electronic signature and contract lifecycle management platform \u2014 agreement preparation, signing, management, and notarization.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-06-05",
+        "overall_swot": {
+          "strengths": [
+            "79.4% gross margin with 15.1% EBITDA margin \u2014 solid profitability at scale",
+            "Dominant e-signature brand with deep enterprise penetration and regulatory acceptance",
+            "101% NRR indicates stable but not expanding \u2014 customer base is sticky if not growing",
+            "Intelligent Agreement Management (IAM) platform expanding beyond e-signature into contract lifecycle"
+          ],
+          "weaknesses": [
+            "9.9% revenue growth approaching low single digits \u2014 the e-signature core is mature",
+            "$9.9B market cap down -23.6% YTD \u2014 market pricing in limited growth optionality",
+            "E-signature becoming commoditized with free alternatives (Adobe Sign, HelloSign, PandaDoc, native integrations)"
+          ],
+          "opportunities": [
+            "IAM platform \u2014 AI-powered contract analytics, agreement workflows, and CLM creating a new category",
+            "Repository of billions of signed agreements is a unique dataset for AI-powered contract intelligence",
+            "Government and regulated industries expansion where DocuSign's compliance certifications create barriers"
+          ],
+          "threats": [
+            "Adobe Sign bundled with Adobe Acrobat and Creative Cloud at marginal cost",
+            "Microsoft embedding e-signature features into Office and Teams",
+            "Free and low-cost e-signature tools commoditizing the core product for SMB customers"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Billions of signed agreements create a proprietary dataset for training AI on contract language, risk patterns, and negotiation norms",
+            "DocuSign AI already extracting key terms, dates, obligations, and risks from uploaded contracts"
+          ],
+          "weaknesses": [
+            "AI contract analysis is a competitive space with specialized CLM vendors (Ironclad, Icertis) also embedding AI"
+          ],
+          "opportunities": [
+            "AI-powered contract generation \u2014 drafting agreements from natural language descriptions using trained contract templates",
+            "Autonomous contract review and redlining \u2014 AI identifying risky clauses and suggesting modifications",
+            "AI as the monetization lever to convert free/basic e-signature users to premium CLM and analytics tiers"
+          ],
+          "threats": [
+            "If AI makes contract drafting and review trivial, the value of DocuSign's repository and analysis diminishes",
+            "LLMs trained on legal text (Harvey, Casetext/Thomson Reuters) potentially doing contract analysis better than DocuSign's domain-specific AI",
+            "AI reducing the total volume of contracts (automated procurement, autonomous agents) which shrinks the signature market"
+          ]
+        }
+      }
     },
     "DOMO": {
       "description": "Cloud-based business intelligence and data visualization platform connecting data sources for real-time dashboards and reporting."
@@ -305,7 +537,54 @@
       "description": "Cloud-based IT service management, CRM, and customer support software for SMBs and mid-market companies."
     },
     "GTLB": {
-      "description": "DevSecOps platform \u2014 integrated source code management, CI/CD, security scanning, and project planning in a single application."
+      "description": "DevSecOps platform \u2014 integrated source code management, CI/CD, security scanning, and project planning in a single application.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-06-02",
+        "overall_swot": {
+          "strengths": [
+            "33.2% revenue growth with 87.4% gross margin \u2014 strong growth at high-quality economics",
+            "Single DevSecOps platform covering the entire software development lifecycle (plan \u2192 code \u2192 build \u2192 deploy \u2192 secure \u2192 monitor)",
+            "118% NRR with strong land-and-expand as teams adopt more stages of the platform",
+            "Open-source foundation (GitLab CE) creates wide adoption base that converts to paid"
+          ],
+          "weaknesses": [
+            "EBITDA margin at -3.6% \u2014 still not consistently profitable despite high gross margins",
+            "$4.5B market cap down -26.1% YTD \u2014 market skeptical about competitive moat vs. GitHub",
+            "Competing against GitHub (Microsoft) which has unlimited R&D budget and developer distribution through VS Code"
+          ],
+          "opportunities": [
+            "Security integration into CI/CD pipeline \u2014 DevSecOps is a genuine differentiator vs. GitHub's bolt-on approach",
+            "AI-powered code review, vulnerability detection, and test generation across the platform",
+            "Enterprise compliance and audit requirements favoring a single platform with end-to-end visibility"
+          ],
+          "threats": [
+            "GitHub Copilot and GitHub Actions making GitHub's platform increasingly comprehensive \u2014 narrowing GitLab's differentiation",
+            "AI coding assistants may shift developer workflows toward AI-native environments rather than traditional DevOps platforms",
+            "Developer preference for best-of-breed tools (GitHub + separate CI/CD + separate security) over GitLab's all-in-one approach"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "GitLab Duo (AI suite) covers the entire development lifecycle \u2014 code generation, review, security, testing, and deployment",
+            "Platform integration means AI features work across stages (AI-generated code \u2192 AI-reviewed \u2192 AI-tested) \u2014 a compound advantage"
+          ],
+          "weaknesses": [
+            "GitLab Duo competing directly with GitHub Copilot which has first-mover advantage and deeper market penetration in AI coding",
+            "AI features are premium-tier \u2014 adoption depends on enterprises upgrading from free/basic to Ultimate"
+          ],
+          "opportunities": [
+            "AI-powered security scanning integrated into the development pipeline \u2014 catching vulnerabilities at the code stage rather than after deployment",
+            "AI agents that autonomously fix bugs, resolve merge conflicts, and handle routine DevOps tasks",
+            "AI-generated test suites and documentation \u2014 reducing the manual work developers typically skip or deprioritize"
+          ],
+          "threats": [
+            "If GitHub Copilot evolves into a full development platform (Copilot Workspace), GitLab's single-platform advantage erodes",
+            "AI dramatically increasing individual developer productivity could reduce the number of developers (and seats) organizations need",
+            "AI-native development environments (Cursor, Replit, v0) could bypass traditional DevOps platforms entirely"
+          ]
+        }
+      }
     },
     "GWRE": {
       "description": "Vertical SaaS for property and casualty insurance \u2014 core policy, billing, and claims management systems for insurers."
@@ -317,7 +596,54 @@
       "description": "Vertical SaaS for healthcare workforce development \u2014 learning management, credentialing, and compliance training for health systems."
     },
     "HUBS": {
-      "description": "Inbound marketing, sales, and customer service platform \u2014 CRM, marketing automation, content management, and service desk for SMBs."
+      "description": "Inbound marketing, sales, and customer service platform \u2014 CRM, marketing automation, content management, and service desk for SMBs.",
+      "latest_call": {
+        "quarter": "Q1 FY2025",
+        "date": "2025-05-07",
+        "overall_swot": {
+          "strengths": [
+            "21.1% growth with 83.7% gross margin \u2014 strong SaaS economics in the SMB/mid-market CRM space",
+            "Freemium-to-paid motion generates efficient customer acquisition at scale",
+            "Integrated platform (marketing, sales, service, CMS, commerce) reduces need for point solutions",
+            "104% NRR demonstrates expansion within existing customer base through hub cross-sells"
+          ],
+          "weaknesses": [
+            "8.1% EBITDA margin remains thin for this gross margin \u2014 sales and marketing intensity is high",
+            "SMB customer base has higher churn than enterprise \u2014 macro sensitivity is real",
+            "$10.7B market cap down -47.2% YTD reflects market repricing of growth durability"
+          ],
+          "opportunities": [
+            "Moving upmarket into mid-market and lower enterprise where Salesforce is overpriced and overcomplicated",
+            "Commerce Hub and payments integration expanding TAM beyond traditional CRM",
+            "International expansion \u2014 particularly in EMEA and APAC where SMB SaaS adoption is earlier"
+          ],
+          "threats": [
+            "Salesforce competing downmarket with Starter/SMB editions at aggressive pricing",
+            "AI-native CRM tools (Clay, Apollo, various AI SDR tools) threatening to unbundle HubSpot's core value proposition",
+            "Vertical CRM solutions (for real estate, healthcare, legal) offering deeper functionality for specific industries"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Breeze AI embedded across hubs \u2014 content generation, chatbot, prospecting, and data enrichment all native",
+            "Large customer dataset enables AI-powered benchmarking and recommendations across the SMB cohort"
+          ],
+          "weaknesses": [
+            "AI features are productivity-layer \u2014 not yet driving meaningful incremental revenue or new product categories",
+            "SMB customers less willing to pay premium pricing for AI features compared to enterprise buyers"
+          ],
+          "opportunities": [
+            "AI-generated marketing content (emails, ads, social posts, blog articles) is the highest-demand AI use case for SMBs",
+            "AI SDR/BDR agents could automate outbound prospecting \u2014 a new product category within Sales Hub",
+            "AI-powered customer service bots handling Tier 1 support for SMBs who can't afford human support teams"
+          ],
+          "threats": [
+            "If AI makes it trivial to build marketing content and run campaigns, the value of HubSpot's integrated platform diminishes",
+            "Standalone AI writing and content tools (Jasper, Copy.ai) offering focused solutions at lower price points",
+            "AI-native CRM startups building sales workflows that are AI-first rather than AI-added"
+          ]
+        }
+      }
     },
     "INTA": {
       "description": "Vertical SaaS for professional and financial services firms \u2014 deal management, CRM, time tracking, and compliance for law and advisory firms."
@@ -341,7 +667,54 @@
       "description": "Work operating system for team collaboration \u2014 project management, workflows, dashboards, and automations across business functions."
     },
     "MDB": {
-      "description": "Developer data platform built around the document database MongoDB Atlas \u2014 cloud database, search, vector, and stream processing."
+      "description": "Developer data platform built around the document database MongoDB Atlas \u2014 cloud database, search, vector, and stream processing.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-06-04",
+        "overall_swot": {
+          "strengths": [
+            "28% revenue growth driven by Atlas (cloud) which is now 70%+ of revenue",
+            "Developer community of millions creates strong bottom-up adoption motion",
+            "Document model flexibility makes MongoDB the default for modern application development",
+            "Net retention at 120% with strong expansion as applications scale"
+          ],
+          "weaknesses": [
+            "EBITDA margin at -0.6% \u2014 still near breakeven despite significant scale",
+            "Enterprise sales motion still maturing \u2014 historically a developer/startup-first database",
+            "Community Server (free tier) creates a large user base that doesn't convert to paid"
+          ],
+          "opportunities": [
+            "Vector search capabilities positioning MongoDB for AI application data layer",
+            "Stream processing and real-time analytics expanding beyond transactional use cases",
+            "Edge computing and mobile sync (Realm) creating new deployment patterns"
+          ],
+          "threats": [
+            "PostgreSQL ecosystem expanding rapidly with extensions that replicate MongoDB's document flexibility",
+            "Cloud-native databases (DynamoDB, CosmosDB, Cloud Firestore) bundled with hyperscaler platforms",
+            "Open-source licensing changes created trust issues with parts of the developer community"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Atlas Vector Search enables semantic search and RAG directly in the operational database \u2014 no separate vector DB needed",
+            "Document model naturally stores unstructured and semi-structured data that AI applications generate",
+            "Strong developer ecosystem means AI application builders are already MongoDB users"
+          ],
+          "weaknesses": [
+            "Vector search is a feature add-on, not a core product \u2014 specialist vector databases (Pinecone, Weaviate) have deeper capabilities"
+          ],
+          "opportunities": [
+            "Every AI application needs a data layer \u2014 MongoDB is positioning as the default operational database for AI apps",
+            "AI-generated content and metadata explosions increase data volumes, driving consumption growth",
+            "Retrieval-augmented generation requires fast, flexible document retrieval \u2014 MongoDB's core strength"
+          ],
+          "threats": [
+            "PostgreSQL + pgvector offering good-enough vector search bundled with the most popular relational database",
+            "If AI applications converge on a small number of patterns, specialized databases could win those patterns",
+            "Hyperscaler AI platforms integrating their own databases for AI workloads, reducing need for independent DBs"
+          ]
+        }
+      }
     },
     "NCNO": {
       "description": "Vertical SaaS for banking \u2014 cloud-based loan origination, account opening, and deposit management for financial institutions."
@@ -350,7 +723,53 @@
       "description": "Hybrid multicloud infrastructure platform \u2014 hyperconverged compute, storage, and virtualization with one-click simplicity."
     },
     "OKTA": {
-      "description": "Identity and access management platform \u2014 single sign-on, multi-factor authentication, and zero-trust identity for workforce and customers."
+      "description": "Identity and access management platform \u2014 single sign-on, multi-factor authentication, and zero-trust identity for workforce and customers.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-05-28",
+        "overall_swot": {
+          "strengths": [
+            "16.2% growth with 77.4% gross margin in a mission-critical category (identity)",
+            "Identity is the new perimeter in Zero Trust \u2014 structurally aligned with enterprise security direction",
+            "106% NRR with strong cross-sell between Workforce Identity and Customer Identity (Auth0)",
+            "Deep integration ecosystem \u2014 thousands of pre-built application connectors create high switching costs"
+          ],
+          "weaknesses": [
+            "12.2% EBITDA margin \u2014 profitability improving but lags security peers",
+            "October 2023 security breach created lasting trust damage with security-conscious buyers",
+            "Growth decelerating from 20%+ to mid-teens \u2014 approaching maturity in core workforce identity"
+          ],
+          "opportunities": [
+            "Identity Governance and Privileged Access expanding TAM beyond core SSO/MFA into adjacent identity categories",
+            "Customer Identity (Auth0) growing faster than workforce \u2014 large developer-driven market",
+            "Identity as the orchestration layer for AI agent authentication and authorization \u2014 new category"
+          ],
+          "threats": [
+            "Microsoft Entra ID bundled with M365/Azure at zero incremental cost \u2014 the permanent structural competitor",
+            "CrowdStrike and Palo Alto adding identity capabilities to their security platforms through acquisition",
+            "Identity commoditization as SSO/MFA become table-stakes features rather than standalone products"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Identity is the authentication layer AI agents will need \u2014 every autonomous agent needs verified identity and permissions",
+            "Behavioral analytics and risk-based authentication already use ML for anomaly detection"
+          ],
+          "weaknesses": [
+            "AI features in identity are incremental (smarter risk scoring, better anomaly detection) rather than transformative new products"
+          ],
+          "opportunities": [
+            "AI agent identity management \u2014 authenticating, authorizing, and auditing autonomous AI agents is a greenfield category",
+            "AI-powered threat detection in identity (credential stuffing, session hijacking) can command premium pricing",
+            "If every SaaS application adds AI features, each needs identity/auth \u2014 expanding Okta's integration surface"
+          ],
+          "threats": [
+            "Microsoft's massive AI investment includes identity-aware Copilot features that reduce the need for third-party identity",
+            "If AI reduces the number of SaaS applications (consolidated platforms), fewer applications need identity management",
+            "Passwordless authentication and passkeys may commoditize the MFA market Okta has historically dominated"
+          ]
+        }
+      }
     },
     "ORCL": {
       "description": "Enterprise database, cloud infrastructure, and application suite \u2014 Oracle Database, OCI, ERP Cloud, HCM Cloud, and NetSuite."
@@ -362,7 +781,52 @@
       "description": "Digital operations management platform \u2014 incident response, on-call scheduling, event intelligence, and automation for DevOps and IT teams."
     },
     "PANW": {
-      "description": "Cybersecurity platform \u2014 network security, cloud security, and AI-driven security operations across firewalls, SASE, and XDR."
+      "description": "Cybersecurity platform \u2014 network security, cloud security, and AI-driven security operations across firewalls, SASE, and XDR.",
+      "latest_call": {
+        "quarter": "Q3 FY2025",
+        "date": "2025-05-20",
+        "overall_swot": {
+          "strengths": [
+            "Platformization strategy driving large multi-product deals; RPO growth outpacing revenue",
+            "Gross margins at 73.5% with 23.1% EBITDA margin \u2014 strong profitability at scale",
+            "$181B market cap \u2014 largest pure-play cybersecurity company globally",
+            "Net retention at 119% with deep enterprise relationships across firewall, cloud, and SOC"
+          ],
+          "weaknesses": [
+            "Platformization transition pressured near-term billings as customers shift from point products to platform bundles at lower initial contract values",
+            "Firewall hardware revenue declining as market shifts to SASE/cloud-delivered security",
+            "Complex product portfolio from acquisitions requires ongoing integration work"
+          ],
+          "opportunities": [
+            "XSIAM (AI-driven SOC platform) is a potential SIEM/SOAR replacement for the entire security operations stack",
+            "SASE market expanding rapidly \u2014 Prisma Access well-positioned against Zscaler in large enterprise",
+            "Cloud security (Prisma Cloud) benefits from multi-cloud complexity and developer-driven adoption"
+          ],
+          "threats": [
+            "Fortinet competing aggressively on price in mid-market firewall and SASE",
+            "Free/open-source security tools reducing barrier to entry for point solutions",
+            "Platformization transition risk \u2014 large deals take longer to close and have execution complexity"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "XSIAM uses AI to automate SOC workflows \u2014 a concrete product, not a feature wrapper",
+            "Massive telemetry dataset from firewall, endpoint, and cloud products feeds AI model training",
+            "Precision AI branding signals strategic commitment \u2014 AI is central to product roadmap, not an add-on"
+          ],
+          "weaknesses": [
+            "XSIAM competes with CrowdStrike's Next-Gen SIEM and Microsoft Sentinel \u2014 crowded AI-SOC market"
+          ],
+          "opportunities": [
+            "AI-driven security operations could eliminate 80%+ of Tier 1 analyst tasks \u2014 premium pricing opportunity",
+            "Generative AI adoption by enterprises increases attack surface complexity, expanding security TAM"
+          ],
+          "threats": [
+            "AI-powered attack tools lower the cost and skill barrier for threat actors \u2014 arms-race dynamic",
+            "Cloud hyperscalers bundling AI-native security into platform services at marginal cost"
+          ]
+        }
+      }
     },
     "PAYC": {
       "description": "Cloud HCM platform for mid-market \u2014 payroll, HR, talent management, time tracking, and workforce management in a single application."
@@ -404,22 +868,211 @@
       "description": "EDI and supply chain management SaaS \u2014 electronic trading partner connections, analytics, and fulfillment for retailers and suppliers."
     },
     "IOT": {
-      "description": "Connected operations platform for physical assets \u2014 IoT sensors, fleet tracking, video monitoring, and industrial equipment management."
+      "description": "Connected operations platform for physical assets \u2014 IoT sensors, fleet tracking, video monitoring, and industrial equipment management.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-05-29",
+        "overall_swot": {
+          "strengths": [
+            "46.2% revenue growth \u2014 among the fastest-growing companies in the entire dataset",
+            "76.7% gross margin is exceptional for a company with hardware/IoT components",
+            "115% NRR driven by customers adding more sensors, cameras, and connected assets over time",
+            "Connected operations platform (fleet, equipment, video, sensors) creates deep operational lock-in"
+          ],
+          "weaknesses": [
+            "EBITDA margin at 1.5% \u2014 still investing heavily in sales capacity and R&D at the expense of profitability",
+            "Hardware component (sensors, cameras) creates supply chain complexity and initial cost barriers",
+            "Relatively low average contract value limits enterprise perception \u2014 seen as field-operations tool rather than strategic platform"
+          ],
+          "opportunities": [
+            "AI-powered video analytics and predictive maintenance expanding the value proposition beyond basic telemetry",
+            "Expansion into new verticals (utilities, agriculture, construction) beyond the core transportation and logistics base",
+            "Platform for operational AI \u2014 using sensor data to predict failures, optimize routes, and reduce downtime"
+          ],
+          "threats": [
+            "Fleet management market has many competitors (Geotab, Teletrac Navman, KeepTruckin/Motive) competing on price",
+            "Hyperscalers offering IoT platforms (AWS IoT, Azure IoT) that could commoditize the data ingestion layer",
+            "Hardware commoditization \u2014 sensor and camera costs declining, reducing switching costs for customers"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Proprietary dataset of billions of real-world operational data points \u2014 fleet routes, equipment performance, driver behavior \u2014 uniquely valuable for AI models",
+            "AI-powered driver safety scoring and coaching already in production and generating measurable ROI for customers",
+            "Computer vision applied to dashcam and site cameras for safety detection \u2014 a genuine AI product, not a wrapper"
+          ],
+          "weaknesses": [
+            "AI features are incremental improvements to existing products rather than standalone AI products with separate pricing"
+          ],
+          "opportunities": [
+            "Predictive maintenance AI \u2014 predicting equipment failures before they happen using sensor data patterns",
+            "Autonomous fleet operations \u2014 as autonomous vehicles deploy, Samsara's platform manages the AI fleet infrastructure",
+            "AI-generated operational insights replacing manual supervisor review of video and telemetry data"
+          ],
+          "threats": [
+            "Tesla and autonomous vehicle platforms building their own fleet management capabilities",
+            "General-purpose AI analytics tools that can process IoT data without Samsara's specialized platform",
+            "If AI-powered autonomous operations reduce the need for human drivers and field workers, some monitoring use cases disappear"
+          ]
+        }
+      }
     },
     "S": {
       "description": "AI-powered cybersecurity platform \u2014 autonomous endpoint protection, cloud workload security, and identity threat detection using a unified data lake."
     },
     "NOW": {
-      "description": "Enterprise workflow automation platform \u2014 IT service management, HR delivery, customer service, and business process automation at scale."
+      "description": "Enterprise workflow automation platform \u2014 IT service management, HR delivery, customer service, and business process automation at scale.",
+      "latest_call": {
+        "quarter": "Q1 FY2025",
+        "date": "2025-04-23",
+        "overall_swot": {
+          "strengths": [
+            "21.7% growth at massive scale with 76.6% gross margin and 23% EBITDA \u2014 elite Rule of 40 performance",
+            "Workflow automation platform deeply embedded in enterprise IT operations \u2014 extremely high switching costs",
+            "Platform strategy working \u2014 expansion beyond ITSM into HR, CSM, and industry workflows diversifying revenue",
+            "$106B market cap reflects status as the enterprise workflow standard"
+          ],
+          "weaknesses": [
+            "NRR at 98% is surprisingly below 100% \u2014 suggests some contraction or optimization in the base",
+            "Premium pricing limits mid-market penetration; perceived as enterprise-only",
+            "Complex implementation requirements create long sales cycles and SI dependency"
+          ],
+          "opportunities": [
+            "Now Assist (generative AI) embedded across the platform could become the AI layer for enterprise operations",
+            "Federal and government vertical expansion \u2014 FedRAMP-authorized with growing public sector pipeline",
+            "Creator workflows and low-code capabilities expanding the builder community on the platform"
+          ],
+          "threats": [
+            "Microsoft adding workflow and automation features across Dynamics 365, Power Platform, and Copilot",
+            "Freshworks and other mid-market platforms competing on simplicity and price below ServiceNow's floor",
+            "AI could automate Tier 1/2 service desk operations \u2014 the highest-volume use case for ServiceNow"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Now Assist is an AI layer across the entire platform \u2014 not a bolt-on but native to every workflow module",
+            "Massive dataset of enterprise workflow patterns creates a unique training corpus for process automation AI",
+            "Platform position means AI improvements benefit every module simultaneously \u2014 compounding returns on AI investment"
+          ],
+          "weaknesses": [
+            "Now Assist pricing still evolving \u2014 unclear whether AI will be additive revenue or cannibalize existing seats"
+          ],
+          "opportunities": [
+            "AI agents that autonomously resolve IT issues, HR requests, and customer cases \u2014 potentially replacing Tier 1 human agents entirely",
+            "AI-powered process mining and optimization could open a new analytics product category on the platform",
+            "Every enterprise AI deployment needs workflow orchestration \u2014 ServiceNow could be the orchestration layer for AI agents across the enterprise"
+          ],
+          "threats": [
+            "If AI agents reduce the volume of tickets/cases flowing through ServiceNow, usage-based metrics could decline",
+            "Microsoft Copilot embedded in Teams and Office could handle simple IT/HR requests before they reach ServiceNow",
+            "Agentic AI startups (Moveworks, Aisera) attacking the IT service desk with lighter, faster implementations"
+          ]
+        }
+      }
     },
     "TTAN": {
       "description": "Vertical SaaS for home and commercial field services \u2014 dispatching, scheduling, CRM, invoicing, and marketing for trades businesses."
     },
     "SHOP": {
-      "description": "Commerce platform for merchants \u2014 online stores, point-of-sale, payments processing, shipping, and capital for businesses of all sizes."
+      "description": "Commerce platform for merchants \u2014 online stores, point-of-sale, payments processing, shipping, and capital for businesses of all sizes.",
+      "latest_call": {
+        "quarter": "Q1 FY2025",
+        "date": "2025-05-07",
+        "overall_swot": {
+          "strengths": [
+            "31.8% revenue growth at massive scale \u2014 one of the fastest-growing large software companies",
+            "Merchant ecosystem creates network effects through Shopify Payments, Fulfillment, Capital, and Balance",
+            "Developer platform and app store create a moat through third-party integrations and switching costs",
+            "$134B market cap reflects market belief in Shopify as the commerce operating system"
+          ],
+          "weaknesses": [
+            "48% gross margin \u2014 payments processing and fulfillment drag the blend far below pure SaaS",
+            "EBITDA margin at 13.5% improving but still well below what gross margin should support",
+            "Revenue mix increasingly tied to GMV and payment processing \u2014 less predictable than pure subscription"
+          ],
+          "opportunities": [
+            "Enterprise push (Shopify Plus and Commerce Components) attacking the Salesforce Commerce/Magento installed base",
+            "Offline/POS expansion through Shop Pay and point-of-sale hardware \u2014 converging online and offline",
+            "B2B commerce and wholesale channels opening a new customer segment beyond D2C"
+          ],
+          "threats": [
+            "Amazon competing for merchant attention with Buy with Prime and FBA alternatives",
+            "Payment processing margins under long-term pressure from competition and interchange regulation",
+            "Temu, Shein, and ultra-low-cost cross-border marketplaces pulling price-sensitive consumers away from independent merchants"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Shopify Magic (AI suite) embedded across store creation, product descriptions, image editing, and customer service",
+            "Sidekick AI assistant helps merchants with store management, analytics interpretation, and marketing decisions",
+            "Proprietary dataset of millions of merchant stores enables AI-powered recommendations (pricing, marketing, inventory)"
+          ],
+          "weaknesses": [
+            "AI features primarily benefit merchants, not Shopify's direct revenue \u2014 harder to monetize as a separate line item"
+          ],
+          "opportunities": [
+            "AI-generated storefronts could dramatically lower the barrier to starting an online store \u2014 expanding TAM to micro-merchants",
+            "AI-powered commerce personalization (product recommendations, dynamic pricing) helping merchants compete with Amazon",
+            "Autonomous commerce operations \u2014 AI handling inventory management, ad spend optimization, and customer service automatically"
+          ],
+          "threats": [
+            "AI makes it easier to build commerce experiences without Shopify \u2014 website builders and social platforms embedding AI commerce tools",
+            "If AI-powered shopping agents compare prices across merchants, brand loyalty and discovery advantages erode",
+            "Amazon's AI capabilities in logistics, pricing, and recommendations are structurally advantaged by scale"
+          ]
+        }
+      }
     },
     "SNOW": {
-      "description": "Cloud data platform \u2014 data warehousing, data lake, data engineering, data science, and data sharing with consumption-based pricing."
+      "description": "Cloud data platform \u2014 data warehousing, data lake, data engineering, data science, and data sharing with consumption-based pricing.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-05-28",
+        "overall_swot": {
+          "strengths": [
+            "36.9% revenue growth with consumption model directly tied to data workload expansion",
+            "Net retention at 125% \u2014 highest in the dataset, proving expansion within existing accounts",
+            "Data sharing and marketplace create network effects that pure-play competitors lack",
+            "Strong positioning as the neutral data platform across AWS, Azure, and GCP"
+          ],
+          "weaknesses": [
+            "EBITDA margin at -21.8% \u2014 significant losses despite revenue scale; path to profitability still unclear",
+            "Consumption model creates revenue volatility \u2014 customer spend optimization directly hits topline",
+            "CEO transition (Sridhar Ramaswamy from Frank Slootman) introduces leadership uncertainty"
+          ],
+          "opportunities": [
+            "Snowpark and native app framework expanding from data warehouse to application platform",
+            "Cortex AI bringing LLM and ML capabilities directly into the data platform \u2014 AI as a feature, not a separate product",
+            "Data Clean Rooms and industry-specific data sharing solutions opening regulated verticals"
+          ],
+          "threats": [
+            "Databricks competing aggressively on AI/ML workloads with a unified lakehouse architecture",
+            "Hyperscaler-native analytics (BigQuery, Redshift, Synapse) improving and bundled at lower cost",
+            "Consumption optimization tools and FinOps practices actively helping customers spend less on Snowflake"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Data gravity \u2014 enterprises building AI need their data platform, and Snowflake holds the data",
+            "Cortex AI enables LLM fine-tuning, embeddings, and inference directly where the data lives",
+            "Arctic (open-source model) signals willingness to invest in proprietary AI capabilities"
+          ],
+          "weaknesses": [
+            "Late to the AI/ML platform race relative to Databricks, which has stronger data science tooling",
+            "Cortex AI features still early \u2014 not yet matching the maturity of Databricks MLflow/Mosaic ecosystem"
+          ],
+          "opportunities": [
+            "RAG (retrieval-augmented generation) workloads require data platform access \u2014 a natural expansion of Snowflake usage",
+            "Every enterprise AI project starts with data preparation and governance \u2014 Snowflake is already there",
+            "Vector search and embedding storage turning Snowflake into an AI-native data store"
+          ],
+          "threats": [
+            "Databricks' unified lakehouse narrative is more compelling to AI/ML teams than Snowflake's warehouse-first approach",
+            "If AI workloads consolidate on GPU-cloud providers (Lambda, CoreWeave), data may follow the compute",
+            "Open-source alternatives (DuckDB, Apache Iceberg ecosystem) reducing lock-in for analytical workloads"
+          ]
+        }
+      }
     },
     "CXM": {
       "description": "Unified customer experience management platform \u2014 social media management, customer care, marketing, and AI-powered insights for large enterprises."
@@ -434,19 +1087,160 @@
       "description": "Enterprise analytics database \u2014 cloud and hybrid data warehousing, advanced analytics, and data management for large-scale workloads."
     },
     "TTD": {
-      "description": "Demand-side advertising platform \u2014 programmatic media buying across connected TV, display, video, audio, and mobile for advertisers globally."
+      "description": "Demand-side advertising platform \u2014 programmatic media buying across connected TV, display, video, audio, and mobile for advertisers globally.",
+      "latest_call": {
+        "quarter": "Q1 FY2025",
+        "date": "2025-05-08",
+        "overall_swot": {
+          "strengths": [
+            "77.8% gross margin with 26.8% EBITDA margin \u2014 exceptional profitability in ad tech",
+            "CTV (Connected TV) leadership \u2014 well-positioned for the ongoing shift from linear to streaming advertising",
+            "Neutral, independent DSP positioning as an alternative to Google/Meta's walled gardens",
+            "95% NRR reflects some churn but is typical for advertising platforms with budget cyclicality"
+          ],
+          "weaknesses": [
+            "15.5% revenue growth decelerating from 20%+ historical rates \u2014 reflects macro advertising headwinds",
+            "$10.7B market cap down -40.6% YTD \u2014 one of the steepest declines in the dataset",
+            "Dependency on the open internet and third-party data \u2014 if walled gardens win, TTD's addressable market shrinks"
+          ],
+          "opportunities": [
+            "Unified ID 2.0 adoption across the industry could strengthen TTD's identity and targeting capabilities",
+            "Retail media networks (Amazon, Walmart, Target) connecting commerce data to programmatic advertising",
+            "CTV growth still in early innings \u2014 linear TV ad budgets (~$150B globally) migrating to programmatic over the decade"
+          ],
+          "threats": [
+            "Google's Privacy Sandbox and cookie deprecation (even if delayed) threatening third-party targeting capabilities",
+            "Amazon DSP competing aggressively with first-party commerce data that TTD can't match",
+            "Meta and Google expanding their walled garden ad inventory, leaving less for the open internet where TTD operates"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Kokai (next-gen platform) uses AI for real-time bidding optimization, audience modeling, and campaign performance prediction",
+            "Massive dataset of advertising performance across channels \u2014 valuable for AI-powered media buying optimization"
+          ],
+          "weaknesses": [
+            "AI optimization features are expected in ad tech \u2014 every DSP claims AI-powered bidding; differentiation is hard"
+          ],
+          "opportunities": [
+            "AI-generated creative optimization \u2014 dynamically adjusting ad creative based on audience and context in real time",
+            "AI enabling smaller advertisers to run sophisticated programmatic campaigns without specialized ad ops teams \u2014 expanding the customer base",
+            "Predictive AI models that connect ad exposure to actual purchase behavior across the open internet"
+          ],
+          "threats": [
+            "AI making walled garden ad platforms smarter and more efficient \u2014 reducing the performance gap that drives advertisers to TTD",
+            "AI-powered direct-response tools (Google PMax, Meta Advantage+) automating campaign management so well that agencies reduce DSP spend",
+            "Generative AI potentially flooding the internet with AI-generated content, degrading the quality of open internet ad inventory"
+          ]
+        }
+      }
     },
     "TOST": {
       "description": "Vertical platform for restaurants \u2014 cloud POS, payments processing, online ordering, payroll, marketing, and operations management."
     },
     "TWLO": {
-      "description": "Cloud communications platform (CPaaS) \u2014 programmable voice, SMS, email (SendGrid), and video APIs plus customer data platform (Segment)."
+      "description": "Cloud communications platform (CPaaS) \u2014 programmable voice, SMS, email (SendGrid), and video APIs plus customer data platform (Segment).",
+      "latest_call": {
+        "quarter": "Q1 FY2025",
+        "date": "2025-05-01",
+        "overall_swot": {
+          "strengths": [
+            "15.7% revenue growth at scale with strong developer ecosystem and API-first architecture",
+            "108% NRR indicating expansion within existing customer base through usage growth",
+            "Segment (customer data platform) creates a strategic data layer connecting communications to customer intelligence",
+            "35.8% YTD price appreciation reflects market recognition of improving unit economics"
+          ],
+          "weaknesses": [
+            "48.7% gross margin \u2014 communications transport is fundamentally lower-margin than pure software",
+            "5.9% EBITDA margin is thin and improving slowly from deeply negative territory",
+            "Revenue per customer still declining in some cohorts as enterprises optimize communications spend"
+          ],
+          "opportunities": [
+            "Customer data platform (Segment) plus communications creates a unique personalization stack",
+            "Flex (contact center) competing with Five9 and NICE in a large, fragmented CCaaS market",
+            "International expansion \u2014 CPaaS adoption outside North America still in early innings"
+          ],
+          "threats": [
+            "Commoditization of messaging and voice APIs \u2014 competitors (Vonage/Ericsson, MessageBird, Infobip) competing on price",
+            "AI chatbots and voice agents reducing the volume of human communications that Twilio monetizes",
+            "Enterprise customers building direct carrier relationships for high-volume messaging, bypassing CPaaS entirely"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "CustomerAI built on Segment data \u2014 AI-powered predictions, next-best-action, and content personalization using first-party customer data",
+            "Existing communications infrastructure is the delivery layer AI agents will use to interact with customers"
+          ],
+          "weaknesses": [
+            "Core transport business is vulnerable to AI reducing communication volume \u2014 fewer humans means fewer messages and calls",
+            "Gross margin structure limits ability to invest in AI R&D relative to higher-margin software peers"
+          ],
+          "opportunities": [
+            "AI agents need communication channels \u2014 voice, SMS, email \u2014 and Twilio's APIs are the programmatic access layer",
+            "AI-powered personalization through Segment data could become a high-margin, high-value product line",
+            "Conversational AI platforms built on Twilio's infrastructure \u2014 positioning as the pipes for AI-human interaction"
+          ],
+          "threats": [
+            "AI dramatically reducing the volume of outbound communications \u2014 fewer marketing messages, fewer support interactions",
+            "AI-native communication tools bypassing traditional telephony and SMS entirely \u2014 new channels that don't use Twilio's infrastructure",
+            "If AI agents handle most customer interactions autonomously, the communications transport layer becomes less valuable"
+          ]
+        }
+      }
     },
     "TYL": {
       "description": "Vertical SaaS for state and local government \u2014 ERP, courts and justice, public safety, tax, and citizen engagement software."
     },
     "PATH": {
-      "description": "Enterprise robotic process automation (RPA) and AI platform \u2014 software robots automating repetitive business processes."
+      "description": "Enterprise robotic process automation (RPA) and AI platform \u2014 software robots automating repetitive business processes.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-06-04",
+        "overall_swot": {
+          "strengths": [
+            "83.2% gross margin with pure software economics in the automation category",
+            "Enterprise installed base of 10,000+ customers with trained workforces on UiPath's platform",
+            "107% NRR indicates continued expansion within existing enterprise deployments",
+            "Process mining and task mining capabilities help enterprises identify automation opportunities"
+          ],
+          "weaknesses": [
+            "12.7% revenue growth is decelerating \u2014 reflecting concerns about RPA's long-term relevance",
+            "8.4% EBITDA margin is thin for this gross margin \u2014 significant reinvestment required",
+            "RPA category itself facing existential questions as AI agents potentially bypass screen-scraping automation",
+            "$5.8B market cap down -31.2% YTD \u2014 market skepticism about the category is real"
+          ],
+          "opportunities": [
+            "Agentic automation \u2014 combining RPA bots with LLM reasoning to handle complex, judgment-based tasks",
+            "Platform expansion beyond RPA into test automation, communications mining, and process orchestration",
+            "Integration of AI models into existing RPA workflows \u2014 making current automations smarter without rebuilding"
+          ],
+          "threats": [
+            "AI agents (built on LLMs) can now automate tasks that previously required UiPath's screen-scraping approach",
+            "Microsoft Power Automate bundled with M365 at zero incremental cost \u2014 structural price competition",
+            "Enterprises may skip RPA entirely and build AI-native automation from scratch using agent frameworks"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Existing enterprise relationships and deployed automations create a distribution advantage for AI-enhanced workflows",
+            "Autopilot and AI-powered document understanding already adding LLM capabilities to existing bots"
+          ],
+          "weaknesses": [
+            "Core RPA technology (screen scraping, UI automation) is the exact layer AI agents can bypass entirely",
+            "AI strategy depends on integrating AI into existing RPA \u2014 but the market may prefer AI-native approaches"
+          ],
+          "opportunities": [
+            "Agentic Process Automation \u2014 if UiPath successfully evolves from RPA vendor to AI agent orchestration platform",
+            "Specialized AI models for enterprise process automation could leverage UiPath's domain expertise and customer data",
+            "Compliance and governance layer for AI agents \u2014 enterprises need audit trails and controls that UiPath already provides"
+          ],
+          "threats": [
+            "Existential risk: if LLM-powered agents can understand and operate software interfaces directly, the entire RPA layer becomes redundant",
+            "AI coding assistants enabling developers to build custom automation faster than deploying RPA",
+            "Microsoft, Google, and Salesforce building agent frameworks that compete with UiPath's orchestration platform"
+          ]
+        }
+      }
     },
     "UPLD": {
       "description": "Portfolio of cloud-based work management and content tools \u2014 document automation, knowledge management, and digital media solutions."
@@ -455,7 +1249,55 @@
       "description": "Data security and analytics platform \u2014 automated data protection, threat detection, and compliance for unstructured data across files and emails."
     },
     "VEEV": {
-      "description": "Vertical SaaS for life sciences \u2014 CRM, content management, regulatory, quality, and clinical data management for pharma and biotech."
+      "description": "Vertical SaaS for life sciences \u2014 CRM, content management, regulatory, quality, and clinical data management for pharma and biotech.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-05-29",
+        "overall_swot": {
+          "strengths": [
+            "21.8% revenue growth with 75.5% gross margin and 39% EBITDA \u2014 outstanding Rule of 40 performance",
+            "Near-monopoly in life sciences CRM and content management \u2014 19 of top 20 pharma companies are customers",
+            "Regulatory moat \u2014 FDA validation requirements create switching costs that pure technology can't replicate",
+            "102% NRR is understated because Veeva's expansion comes through new product adoption, not seat expansion"
+          ],
+          "weaknesses": [
+            "Single-vertical concentration \u2014 100% of revenue from life sciences creates dependency on pharma R&D spending cycles",
+            "Vault platform migration (from Salesforce to own platform) introduces multi-year execution risk",
+            "Premium pricing limits penetration into smaller biotech and emerging pharma companies"
+          ],
+          "opportunities": [
+            "Vault CRM (replacing Salesforce-based Veeva CRM) creates a self-owned platform with better economics and control",
+            "Clinical data management (Vault CDMS) attacking Oracle Health Sciences \u2014 a large, legacy-dominated market",
+            "Regulatory and quality management expanding into adjacent compliance categories within life sciences"
+          ],
+          "threats": [
+            "Salesforce competing directly after the CRM partnership ended \u2014 building life sciences-specific CRM capabilities",
+            "IQVIA and other life sciences data companies expanding into software, competing from the data side",
+            "Regulatory environments could simplify (reducing the compliance moat) or shift to different frameworks"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Massive proprietary dataset of clinical, regulatory, and commercial life sciences data \u2014 uniquely valuable for AI training",
+            "CRM Pulse (AI features) analyzing HCP engagement patterns to optimize sales rep activity",
+            "Domain-specific AI in a regulated industry where trust and validation matter more than speed"
+          ],
+          "weaknesses": [
+            "FDA regulatory framework for AI/ML in life sciences is still evolving \u2014 uncertainty slows product launches",
+            "AI features must be validated to pharmaceutical-grade standards, limiting deployment velocity"
+          ],
+          "opportunities": [
+            "AI-powered clinical trial optimization \u2014 site selection, patient matching, protocol design \u2014 massive TAM in R&D efficiency",
+            "Automated adverse event detection and pharmacovigilance reporting using NLP on medical literature",
+            "AI-generated regulatory submissions and documentation could dramatically reduce time-to-filing for pharma companies"
+          ],
+          "threats": [
+            "AI could enable new entrants to build life sciences software without Veeva's 10+ years of domain expertise",
+            "If AI dramatically accelerates drug development, pharma companies may invest differently \u2014 favoring AI platforms over traditional SaaS",
+            "Large language models trained on medical literature could commoditize the knowledge layer Veeva's products encode"
+          ]
+        }
+      }
     },
     "VRSK": {
       "description": "Data analytics and risk assessment for insurance, energy, and financial services \u2014 actuarial models, claims analytics, and catastrophe modeling."
@@ -476,7 +1318,54 @@
       "description": "Website creation and management platform \u2014 drag-and-drop editor, e-commerce, hosting, domains, and business tools for SMBs and creators."
     },
     "WDAY": {
-      "description": "Cloud enterprise platform for HR and finance \u2014 human capital management, payroll, financial management, and workforce planning."
+      "description": "Cloud enterprise platform for HR and finance \u2014 human capital management, payroll, financial management, and workforce planning.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-05-22",
+        "overall_swot": {
+          "strengths": [
+            "75.8% gross margin with 17.6% EBITDA in a complex, implementation-heavy enterprise market",
+            "Deep integration into HR and finance back-office processes creates very high switching costs",
+            "Strategic position as the modern alternative to SAP/Oracle HCM for large enterprises",
+            "Strong customer base in financial services, healthcare, and technology verticals"
+          ],
+          "weaknesses": [
+            "13.3% revenue growth is decelerating \u2014 approaching the maturity profile of legacy enterprise software",
+            "$33.7B market cap has contracted significantly (YTD -37.7%) reflecting growth concerns",
+            "Long implementation cycles (6-18 months) create revenue recognition lumpiness and customer satisfaction risk"
+          ],
+          "opportunities": [
+            "Financial management (ERP) expansion is the largest TAM opportunity \u2014 still early innings of displacing Oracle/SAP",
+            "AI-powered skills intelligence and workforce planning could differentiate HCM beyond basic HR administration",
+            "Mid-market push with Workday Launch editions expanding the addressable customer base below the enterprise floor"
+          ],
+          "threats": [
+            "SAP SuccessFactors and Oracle HCM Cloud competing aggressively and improving product quality rapidly",
+            "Seat-based HCM pricing directly exposed to AI-driven workforce reduction \u2014 fewer employees means fewer seats",
+            "Emerging HR platforms (Rippling, Deel) attacking from below with modern, lighter-weight implementations"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Workday AI trained on anonymized data from thousands of enterprise customers \u2014 a unique cross-company dataset",
+            "Skills Cloud and talent intelligence already using ML for workforce planning and internal mobility"
+          ],
+          "weaknesses": [
+            "AI features feel incremental rather than transformative \u2014 no Agentforce-style platform bet yet",
+            "Core HCM and ERP workflows are deeply process-driven; AI can optimize but not fundamentally restructure them"
+          ],
+          "opportunities": [
+            "AI-powered financial close automation could dramatically reduce the human effort in month-end/quarter-end processes",
+            "Autonomous HR agents handling benefits questions, PTO requests, and onboarding \u2014 reducing HR team headcount needs",
+            "Predictive workforce planning using AI to anticipate hiring, attrition, and skills gaps before they manifest"
+          ],
+          "threats": [
+            "If AI reduces enterprise headcount, Workday's per-employee pricing model mechanically loses revenue",
+            "Microsoft 365 Copilot handling HR self-service queries within Teams, intercepting requests before they reach Workday",
+            "AI-first HR startups building from scratch with modern architectures unencumbered by legacy product decisions"
+          ]
+        }
+      }
     },
     "WK": {
       "description": "Cloud platform for regulatory compliance and reporting \u2014 SEC filings, ESG reporting, audit management, and internal controls."
@@ -485,13 +1374,105 @@
       "description": "Digital media and internet company \u2014 portfolio of technology brands in cybersecurity (Ziff Davis), healthcare, shopping, and connectivity."
     },
     "ZM": {
-      "description": "Video-first unified communications platform \u2014 video meetings, team chat, phone, webinars, and AI-powered collaboration tools."
+      "description": "Video-first unified communications platform \u2014 video meetings, team chat, phone, webinars, and AI-powered collaboration tools.",
+      "latest_call": {
+        "quarter": "Q1 FY2026",
+        "date": "2025-05-21",
+        "overall_swot": {
+          "strengths": [
+            "77.4% gross margin with 56.6% EBITDA \u2014 among the most profitable companies in the dataset",
+            "$31.3B market cap with 26.8% YTD appreciation reflects improved market sentiment",
+            "Strong brand recognition globally \u2014 Zoom is a verb for video communication",
+            "Cash-rich balance sheet provides optionality for M&A and investment"
+          ],
+          "weaknesses": [
+            "5% revenue growth \u2014 near zero-growth territory as the pandemic-era surge fully normalizes",
+            "NRR at 98% \u2014 existing customers are contracting, not expanding",
+            "Enterprise penetration limited \u2014 majority of revenue still from smaller customers and prosumers"
+          ],
+          "opportunities": [
+            "Zoom Workplace platform (chat, phone, whiteboard, notes, email, calendar) expanding beyond meetings",
+            "Contact center (Zoom CX) competing with Five9, NICE, and Genesys \u2014 large adjacent TAM",
+            "Zoom Docs and productivity tools positioning as a Microsoft 365 alternative for Zoom-first organizations"
+          ],
+          "threats": [
+            "Microsoft Teams bundled with M365 \u2014 the structural competitor Zoom can never fully overcome",
+            "Google Meet improving and bundled with Workspace for enterprise customers",
+            "Commoditization of video conferencing \u2014 the core product is free or near-free from multiple vendors"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "AI Companion (meeting summaries, action items, smart scheduling) already deployed across the platform at no extra cost",
+            "Federated AI approach \u2014 using multiple LLM providers rather than locked into one \u2014 provides flexibility",
+            "Massive dataset of meeting interactions, presentations, and conversations for AI training"
+          ],
+          "weaknesses": [
+            "Giving away AI Companion for free sets a precedent \u2014 makes future AI monetization harder",
+            "AI features are meeting-centric \u2014 unclear how they extend to the broader Workplace platform"
+          ],
+          "opportunities": [
+            "AI-powered digital twins and avatars that can attend meetings on your behalf \u2014 a potential new product category",
+            "AI reducing the need for meetings entirely (automated updates, async summaries) could be turned into a feature rather than a threat",
+            "Real-time translation and transcription opening non-English markets with AI-native localization"
+          ],
+          "threats": [
+            "If AI reduces the need for meetings (better async communication, AI-generated summaries), Zoom's core usage declines",
+            "Microsoft Copilot deeply integrated across Teams, Word, PowerPoint, Outlook \u2014 more touchpoints for AI than Zoom",
+            "AI meeting assistants from startups (Otter, Fireflies, Fathom) competing on AI features specifically"
+          ]
+        }
+      }
     },
     "GTM": {
       "description": "B2B data intelligence platform \u2014 contact and company data, intent signals, and workflow tools for go-to-market sales and marketing teams."
     },
     "ZS": {
-      "description": "Cloud security platform \u2014 zero-trust network access (ZTNA), secure web gateway, cloud workload protection via a global security cloud."
+      "description": "Cloud security platform \u2014 zero-trust network access (ZTNA), secure web gateway, cloud workload protection via a global security cloud.",
+      "latest_call": {
+        "quarter": "Q3 FY2025",
+        "date": "2025-06-03",
+        "overall_swot": {
+          "strengths": [
+            "23.9% revenue growth with 114% NRR \u2014 strong expansion in existing enterprise accounts",
+            "Zero Trust architecture is structurally aligned with the direction enterprise security is moving",
+            "Purpose-built cloud-native security platform \u2014 no legacy hardware baggage",
+            "$29.1B market cap reflects premium positioning in a critical, growing market"
+          ],
+          "weaknesses": [
+            "76.5% gross margin is good but below some security peers due to infrastructure costs of inline inspection",
+            "EBITDA margin at 6.9% \u2014 profitability lags CrowdStrike and Palo Alto at similar scale",
+            "Dependency on large enterprise deals creates revenue lumpiness and elongated sales cycles"
+          ],
+          "opportunities": [
+            "Zero Trust for workloads (ZPA for cloud apps) expanding TAM beyond traditional network security",
+            "Data protection and DLP integrated into the security cloud \u2014 capturing a new budget category",
+            "AI-powered security capabilities (risk scoring, anomaly detection) deepening the platform value"
+          ],
+          "threats": [
+            "Palo Alto's Prisma Access directly competing with aggressive platformization and bundling",
+            "Netskope competing strongly in CASB/SSE with a well-funded challenger strategy",
+            "Enterprises consolidating security vendors \u2014 Zscaler must win platform deals or risk being consolidated out"
+          ]
+        },
+        "ai_swot": {
+          "strengths": [
+            "Inline inspection of all traffic generates massive dataset for AI-powered threat detection",
+            "Zero Trust architecture is the natural framework for securing AI model access and data flows"
+          ],
+          "weaknesses": [
+            "AI features are enhancements to existing products rather than standalone revenue drivers"
+          ],
+          "opportunities": [
+            "AI workloads need security governance (model access control, data leakage prevention) \u2014 Zscaler can provide this at the network layer",
+            "AI-powered SOC automation reducing the manual work of security operations for Zscaler customers"
+          ],
+          "threats": [
+            "AI could simplify network security configuration, reducing the premium for Zscaler's managed cloud approach",
+            "Hyperscaler-native security services incorporating AI-driven threat detection bundled with cloud platforms"
+          ]
+        }
+      }
     }
   }
 }
