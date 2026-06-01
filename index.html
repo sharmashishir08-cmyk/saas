@@ -24,17 +24,14 @@ header{border-bottom:3px double var(--ink);padding-bottom:14px;cursor:pointer}
 h1{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(30px,5vw,52px);line-height:.98;margin:6px 0 4px;letter-spacing:-.01em}
 .meta{font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--ink-soft);display:flex;gap:18px;flex-wrap:wrap;margin-top:8px}
 .meta b{color:var(--ink);font-weight:700}
-.mono{font-family:"JetBrains Mono",monospace}.serif{font-family:"Fraunces",serif}
 
-/* reviewer bar */
-.reviewer{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0 6px;padding:12px 14px;background:var(--ink);color:var(--paper);border-radius:3px}
-.reviewer .rl{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#bcae93}
-.reviewer input{font-family:"JetBrains Mono",monospace;font-size:12px;padding:7px 10px;border:1px solid #3a362f;border-radius:3px;background:#26231e;color:var(--paper);width:170px}
+/* toolbar */
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0 6px;padding:10px 14px;background:var(--ink);color:var(--paper);border-radius:3px}
 .btn{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--paper);background:transparent;color:var(--paper);padding:8px 14px;border-radius:3px;cursor:pointer;transition:.12s}
-.btn:hover{background:var(--paper);color:var(--ink)}.btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}.btn.solid:hover{background:#a92f22}
+.btn:hover{background:var(--paper);color:var(--ink)}
 .btn.ink{border-color:var(--rule);color:var(--ink);background:var(--paper)}.btn.ink:hover{background:var(--ink);color:var(--paper)}
-.submit-status{font-family:"JetBrains Mono",monospace;font-size:11px;color:#bcae93}.submit-status.ok{color:#8fd6a6}.submit-status.err{color:#f0a59a}
 .spacer{flex:1}
+.toolbar .hint{font-family:"JetBrains Mono",monospace;font-size:10px;color:#bcae93}
 
 /* controls */
 .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:8px 0;padding:12px 14px;background:var(--paper-2);border:1px solid var(--rule);border-radius:3px}
@@ -85,46 +82,57 @@ tbody tr.notclean td{color:var(--ink-soft)}tbody tr.edited{background:#fbf6e9}
 .rev{color:var(--accent);font-weight:700;cursor:help}
 .cls{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
 .edot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-left:4px;vertical-align:middle}
+.ndot{color:var(--i);margin-left:3px;font-size:10px;vertical-align:middle;cursor:help}
 select.tag{font-family:"JetBrains Mono",monospace;font-size:10.5px;padding:2px 3px;border:1px solid var(--rule);border-radius:2px;background:#fff;color:var(--ink);max-width:120px}
 .editcell{display:flex;flex-direction:column;gap:3px;align-items:flex-start}
 .editcell label{font-size:9.5px;color:var(--ink-soft);display:flex;align-items:center;gap:4px}
 
-/* detail view */
+/* detail */
 #detail-view{display:none}
 .back-btn{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--accent);background:none;border:none;cursor:pointer;padding:0;margin-bottom:14px;letter-spacing:.03em}
 .back-btn:hover{text-decoration:underline}
 .detail-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:4px}
 .detail-head h2{font-family:"Fraunces",serif;font-weight:900;font-size:36px;margin:0}
 .detail-head .dtk{font-family:"JetBrains Mono",monospace;font-size:18px;color:var(--ink-soft)}
-.detail-desc{font-size:16px;line-height:1.55;color:var(--ink-soft);margin:6px 0 20px;max-width:720px;font-style:italic}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px}
+.detail-desc{font-size:16px;line-height:1.55;color:var(--ink-soft);margin:6px 0 24px;max-width:760px;font-style:italic}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:30px}
 @media(max-width:700px){.metrics{grid-template-columns:repeat(2,1fr)}}
 .metric{background:#fff;border:1px solid var(--rule);border-radius:3px;padding:14px 16px}
 .metric .mlab{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
 .metric .mval{font-family:"Fraunces",serif;font-weight:600;font-size:28px;margin-top:4px}
-.swot-title{font-family:"Fraunces",serif;font-weight:600;font-size:22px;margin:0 0 14px}
-.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:30px}
+.section-head{font-family:"Fraunces",serif;font-weight:600;font-size:22px;margin:0 0 4px;display:flex;align-items:baseline;gap:10px}
+.section-sub{font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--ink-soft);margin-bottom:14px;letter-spacing:.03em}
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:30px}
 @media(max-width:700px){.swot-grid{grid-template-columns:1fr}}
-.swot-box{background:#fff;border:1px solid var(--rule);border-radius:3px;border-left:4px solid var(--rule);padding:14px 16px;min-height:90px}
+.swot-box{background:#fff;border:1px solid var(--rule);border-radius:3px;border-left:4px solid var(--rule);padding:14px 16px;min-height:80px}
 .swot-box.str{border-left-color:var(--str)}.swot-box.opp{border-left-color:var(--opp)}
 .swot-box.weak{border-left-color:var(--weak)}.swot-box.thr{border-left-color:var(--thr)}
 .swot-label{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
 .swot-label.str{color:var(--str)}.swot-label.opp{color:var(--opp)}.swot-label.weak{color:var(--weak)}.swot-label.thr{color:var(--thr)}
-.excerpt{margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--rule-soft)}
-.excerpt:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
-.excerpt .eq{font-size:14px;line-height:1.55;color:var(--ink)}
-.excerpt .esrc{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-soft);margin-top:4px}
-.empty-state{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink-soft);font-style:italic;padding:8px 0}
+.swot-item{font-size:14px;line-height:1.5;margin-bottom:8px;padding-left:12px;border-left:2px solid var(--rule-soft)}
+.swot-item:last-child{margin-bottom:0}
+.empty-state{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink-soft);font-style:italic;padding:4px 0}
+.divider{border:none;border-top:1px solid var(--rule);margin:30px 0}
 
-/* admin */
-#admin{display:none;margin:16px 0;background:#fff;border:2px solid var(--accent);border-radius:3px;padding:16px 18px}
-#admin h2{font-family:"Fraunces",serif;font-size:22px;margin:0 0 4px}
-#admin .rev-card{border:1px solid var(--rule);border-radius:3px;padding:10px 12px;margin-top:12px}
-#admin .rev-head{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:700;margin-bottom:6px}
-#admin .diff{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-soft);line-height:1.7}
-#admin .diff b{color:var(--ink)}
+/* transcript accordion */
+.transcript-toggle{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--accent);background:none;border:1px solid var(--rule);
+  border-radius:3px;padding:10px 16px;cursor:pointer;width:100%;text-align:left;transition:.12s}
+.transcript-toggle:hover{background:var(--paper-2)}
+.transcript-body{display:none;background:#fff;border:1px solid var(--rule);border-top:0;border-radius:0 0 3px 3px;
+  padding:20px;max-height:500px;overflow:auto;font-size:14px;line-height:1.7;white-space:pre-wrap;
+  font-family:"Newsreader",Georgia,serif;color:var(--ink)}
+.transcript-body.open{display:block}
 
-footer{margin-top:40px;font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--ink-soft);border-top:1px solid var(--rule);padding-top:14px;line-height:1.7}
+/* notes */
+.notes-box{margin-top:30px;background:#fff;border:1px solid var(--rule);border-radius:3px;padding:18px 20px}
+.notes-box .nlab{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px;display:flex;justify-content:space-between}
+.notes-box textarea{width:100%;min-height:90px;font-family:"Newsreader",Georgia,serif;font-size:14px;line-height:1.55;
+  border:1px solid var(--rule);border-radius:3px;padding:10px 12px;color:var(--ink);background:var(--paper);resize:vertical}
+.notes-box textarea:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.nsaved{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--pos);opacity:0;transition:opacity .3s}
+
+footer{margin-top:40px;font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--ink-soft);
+  border-top:1px solid var(--rule);padding-top:14px;line-height:1.7}
 </style>
 </head>
 <body>
@@ -134,14 +142,14 @@ footer{margin-top:40px;font-family:"JetBrains Mono",monospace;font-size:10.5px;c
     <h1>Public Software Comps</h1>
     <div class="meta"><span><b id="m-n">—</b> companies</span><span>as of <b id="m-date">—</b></span><span id="m-src">—</span></div>
   </header>
-  <div class="reviewer">
-    <span class="rl">Your name</span><input id="rev-name" placeholder="e.g. Priya K." autocomplete="off">
-    <button class="btn" id="edit-toggle">✎ Edit tags</button><span class="spacer"></span>
-    <span class="submit-status" id="sub-status"></span><button class="btn solid" id="submit-btn">Submit my tags</button>
+  <div class="toolbar">
+    <button class="btn" id="edit-toggle">✎ Edit tags</button>
+    <span class="hint" id="edit-hint" style="display:none">editing · changes saved in your browser</span>
+    <span class="spacer"></span>
+    <span class="hint">click any ticker to see detail + earnings</span>
   </div>
-  <div id="admin"><h2>Reviewer submissions</h2><div id="admin-body">Loading…</div></div>
 
-  <!-- ===== MAIN VIEW ===== -->
+  <!-- MAIN VIEW -->
   <div id="main-view">
     <div class="controls">
       <span class="ctl-label">Class</span>
@@ -170,8 +178,8 @@ footer{margin-top:40px;font-family:"JetBrains Mono",monospace;font-size:10.5px;c
         </div>
       </div>
       <div>
-        <div class="panel-title">Comparables <span id="edit-hint" style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);display:none"> · editing on</span></div>
-        <div class="panel-sub"><span>click ticker to drill in · <span class="rev">▲</span> = review · <span class="edot"></span> = edited</span></div>
+        <div class="panel-title">Comparables</div>
+        <div class="panel-sub"><span>click ticker to drill in · <span class="rev">▲</span> = review · <span style="color:var(--i)">✎</span> = has notes</span></div>
         <div class="tablebox"><div class="tscroll"><table id="tbl">
           <thead><tr><th class="l" data-k="ticker">Ticker</th><th class="l" data-k="vh_class">Class</th><th data-k="ev_rev">EV/Rev</th><th data-k="rev_growth">Grw</th><th data-k="gross_margin">GM</th><th data-k="ebitda_margin">EBITDA</th><th data-k="r40_ebitda">R40</th><th data-k="nrr">NRR</th><th data-k="ytd_change">YTD</th></tr></thead>
           <tbody id="tbody"></tbody>
@@ -180,35 +188,24 @@ footer{margin-top:40px;font-family:"JetBrains Mono",monospace;font-size:10.5px;c
     </div>
   </div>
 
-  <!-- ===== DETAIL VIEW ===== -->
-  <div id="detail-view">
-    <button class="back-btn" onclick="navMain()">← Back to all companies</button>
-    <div id="detail-content"></div>
-  </div>
+  <!-- DETAIL VIEW -->
+  <div id="detail-view"><button class="back-btn" onclick="navMain()">← Back to all companies</button><div id="detail-content"></div></div>
 
   <footer id="foot">Loading…</footer>
 </div>
 
 <script>
-/* ============ CONFIG ============ */
-const WORKER_URL = "PASTE_YOUR_CLOUDFLARE_WORKER_URL_HERE";
-/* ================================ */
-
-const FIELDS={
-  ev_rev:{label:'EV / Revenue',suf:'x'},rev_growth:{label:'Revenue Growth %',suf:'%'},
-  gross_margin:{label:'Gross Margin %',suf:'%'},ebitda_margin:{label:'EBITDA Margin %',suf:'%'},
-  r40_ebitda:{label:'Rule of 40',suf:''},nrr:{label:'NRR %',suf:'%'},
-  ytd_change:{label:'YTD Price Chg %',suf:'%'},mcap_m:{label:'Market Cap ($M)',suf:''}
-};
+const FIELDS={ev_rev:{label:'EV / Revenue',suf:'x'},rev_growth:{label:'Revenue Growth %',suf:'%'},gross_margin:{label:'Gross Margin %',suf:'%'},
+  ebitda_margin:{label:'EBITDA Margin %',suf:'%'},r40_ebitda:{label:'Rule of 40',suf:''},nrr:{label:'NRR %',suf:'%'},
+  ytd_change:{label:'YTD Price Chg %',suf:'%'},mcap_m:{label:'Market Cap ($M)',suf:''}};
 const VH_OPTS=["horizontal","vertical","infrastructure","security","untagged"];
 const PUR_OPTS=["pure-saas","payments-blended","comms-blended","services-blended","lending","consumer","data-ip","diversified","untagged"];
 const HUE={horizontal:cv('--h'),vertical:cv('--v'),infrastructure:cv('--i'),security:cv('--s'),untagged:'#999'};
 const PURCLR={'pure-saas':null,'payments-blended':'#b06a2c','lending':'#8a2f4a','comms-blended':'#2c7a8a','services-blended':'#6a6a2c','consumer':'#8a5a2c','diversified':'#555','data-ip':'#444','untagged':'#999'};
 function cv(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
 
-let DATA=[],BASE={},ENRICH={},overrides=ld('comps_overrides_v1',{}),
-    state={cls:'all',growth:'all',clean:false,reviewOnly:false,q:'',sortK:'r40_ebitda',sortDir:-1,edit:false,
-           axX:'rev_growth',axY:'ebitda_margin',axS:'mcap_m'};
+let DATA=[],ENRICH={},overrides=ld('comps_overrides_v1',{}),notes=ld('comps_notes_v1',{}),
+    state={cls:'all',growth:'all',clean:false,reviewOnly:false,q:'',sortK:'r40_ebitda',sortDir:-1,edit:false,axX:'rev_growth',axY:'ebitda_margin',axS:'mcap_m'};
 
 function ld(k,f){try{return JSON.parse(localStorage.getItem(k))||f;}catch(e){return f;}}
 function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
@@ -217,96 +214,83 @@ function setOvr(tk,fld,val){const c=DATA.find(x=>x.ticker===tk);if(!c)return;con
   const o=overrides[tk]||{};o[fld]=val;const m={vh_class:o.vh_class??b.vh_class,model_purity:o.model_purity??b.model_purity,review:o.review??b.review};
   if(m.vh_class===b.vh_class&&m.model_purity===b.model_purity&&m.review===b.review)delete overrides[tk];else overrides[tk]=m;sv('comps_overrides_v1',overrides);render();}
 
-/* populate axis selectors */
 function initAxes(){['ax-x','ax-y','ax-s'].forEach(id=>{const sel=document.getElementById(id);
   sel.innerHTML=Object.entries(FIELDS).map(([k,v])=>`<option value="${k}">${v.label}</option>`).join('');});
   document.getElementById('ax-x').value=state.axX;document.getElementById('ax-y').value=state.axY;document.getElementById('ax-s').value=state.axS;
   ['ax-x','ax-y','ax-s'].forEach(id=>document.getElementById(id).addEventListener('change',e=>{
     state[id==='ax-x'?'axX':id==='ax-y'?'axY':'axS']=e.target.value;renderScatter();}));}
 
-/* ---- load ---- */
 Promise.all([
   fetch('./data/companies.json').then(r=>r.json()),
   fetch('./data/enrichments.json').then(r=>r.json()).catch(()=>({companies:{}}))
 ]).then(([j,en])=>{
   DATA=j.companies;ENRICH=en.companies||{};
-  DATA.forEach(c=>BASE[c.ticker]={vh_class:c.vh_class,model_purity:c.model_purity,review:c.review});
-  document.getElementById('m-n').textContent=j.n;document.getElementById('m-date').textContent=j.as_of;
-  document.getElementById('m-src').textContent=j.source;
-  initAxes();render();route();maybeAdmin();
+  document.getElementById('m-n').textContent=j.n;document.getElementById('m-date').textContent=j.as_of;document.getElementById('m-src').textContent=j.source;
+  initAxes();render();route();
 }).catch(()=>{document.getElementById('foot').innerHTML='⚠ Could not load data files.';});
 
-/* ---- filtering ---- */
 function filtered(){return DATA.filter(c=>{const e=eff(c);
   if(state.cls!=='all'&&e.vh!==state.cls)return false;if(state.growth!=='all'&&c.growth_bucket!==state.growth)return false;
   if(state.clean&&!e.clean)return false;if(state.reviewOnly&&!e.review)return false;
   if(state.q){const s=state.q.toLowerCase();if(!c.ticker.toLowerCase().includes(s)&&!c.name.toLowerCase().includes(s))return false;}return true;});}
 function median(a){if(!a.length)return null;const s=[...a].sort((x,y)=>x-y);const m=Math.floor(s.length/2);return s.length%2?s[m]:(s[m-1]+s[m])/2;}
-
 function render(){renderStats();renderScatter();renderTable();
   document.getElementById('rev-count').textContent=DATA.filter(c=>eff(c).review).length;
-  document.getElementById('foot').innerHTML='Data: SEG SaaS Index (Tiingo), TTM. Tags are editable — your changes recompute scatter and medians live. Click any ticker to see the company detail page.';}
+  document.getElementById('foot').innerHTML='Data: SEG SaaS Index (Tiingo), TTM. Click any ticker to see earnings call takeaways, AI impact assessment, and company notes.';}
 function renderStats(){const f=filtered();document.getElementById('stats').innerHTML=[
   ['Companies',f.length],['Median EV/Rev',(v=>v!=null?v.toFixed(1)+'x':'—')(median(f.map(c=>c.ev_rev)))],
-  ['Median Growth',(v=>v!=null?v.toFixed(1)+'%':'—')(median(f.map(c=>c.rev_growth)))],
-  ['Median R40',(v=>v!=null?v.toFixed(0):'—')(median(f.map(c=>c.r40_ebitda)))],
+  ['Median Growth',(v=>v!=null?v.toFixed(1)+'%':'—')(median(f.map(c=>c.rev_growth)))],['Median R40',(v=>v!=null?v.toFixed(0):'—')(median(f.map(c=>c.r40_ebitda)))],
   ['Median NRR',(v=>v!=null?v.toFixed(0)+'%':'—')(median(f.filter(c=>c.nrr!=null).map(c=>c.nrr)))]
 ].map(([l,v])=>`<div class="stat"><div class="lab">${l}</div><div class="val">${v}</div></div>`).join('');}
 
-/* ---- scatter ---- */
+/* scatter */
 function niceRange(arr,pad){let mn=Math.min(...arr),mx=Math.max(...arr);const sp=(mx-mn)*pad;mn-=sp;mx+=sp;
   const step=Math.pow(10,Math.floor(Math.log10(mx-mn||1)))/2;mn=Math.floor(mn/step)*step;mx=Math.ceil(mx/step)*step;
   const ticks=[];for(let t=mn;t<=mx+step*.01;t+=step)ticks.push(Math.round(t*100)/100);return{mn,mx,ticks};}
-
 function renderScatter(){
-  const f=filtered(),all=DATA,W=560,H=460,pad={l:52,r:18,t:18,b:42};
-  const fk=state.axX,fky=state.axY,fks=state.axS;
-  const pts=all.filter(c=>c[fk]!=null&&c[fky]!=null);if(!pts.length)return;
+  const f=filtered(),W=560,H=460,pad={l:52,r:18,t:18,b:42},fk=state.axX,fky=state.axY,fks=state.axS;
+  const pts=DATA.filter(c=>c[fk]!=null&&c[fky]!=null);if(!pts.length)return;
   const xr=niceRange(pts.map(c=>c[fk]),.12),yr=niceRange(pts.map(c=>c[fky]),.12);
-  const X=v=>pad.l+(v-xr.mn)/(xr.mx-xr.mn)*(W-pad.l-pad.r);
-  const Y=v=>H-pad.b-(v-yr.mn)/(yr.mx-yr.mn)*(H-pad.t-pad.b);
-  const svals=pts.map(c=>Math.abs(c[fks]||1));const smax=Math.max(...svals,1);
-  const R=v=>Math.max(3,Math.min(16,Math.sqrt(Math.abs(v||1)/smax)*16));
+  const X=v=>pad.l+(v-xr.mn)/(xr.mx-xr.mn)*(W-pad.l-pad.r),Y=v=>H-pad.b-(v-yr.mn)/(yr.mx-yr.mn)*(H-pad.t-pad.b);
+  const svals=pts.map(c=>Math.abs(c[fks]||1)),smax=Math.max(...svals,1),R=v=>Math.max(3,Math.min(16,Math.sqrt(Math.abs(v||1)/smax)*16));
   let s=[];
   xr.ticks.forEach(t=>{if(t<xr.mn||t>xr.mx)return;s.push(`<line class="gridline" x1="${X(t)}" y1="${pad.t}" x2="${X(t)}" y2="${H-pad.b}"/>`);
     s.push(`<text class="tick" x="${X(t)}" y="${H-pad.b+14}" text-anchor="middle">${t}</text>`);});
   yr.ticks.forEach(t=>{if(t<yr.mn||t>yr.mx)return;s.push(`<line class="gridline" x1="${pad.l}" y1="${Y(t)}" x2="${W-pad.r}" y2="${Y(t)}"/>`);
     s.push(`<text class="tick" x="${pad.l-6}" y="${Y(t)+3}" text-anchor="end">${t}</text>`);});
-  if(fk==='rev_growth'&&fky==='ebitda_margin'){
-    const x1=xr.mn,x2=xr.mx;s.push(`<line class="r40line" x1="${X(x1)}" y1="${Y(40-x1)}" x2="${X(x2)}" y2="${Y(40-x2)}"/>`);
+  if(fk==='rev_growth'&&fky==='ebitda_margin'){const x1=xr.mn,x2=xr.mx;
+    s.push(`<line class="r40line" x1="${X(x1)}" y1="${Y(40-x1)}" x2="${X(x2)}" y2="${Y(40-x2)}"/>`);
     s.push(`<text class="axis-label" x="${X(x2)-4}" y="${Y(40-x2)-6}" text-anchor="end" fill="${cv('--accent')}">R40</text>`);}
   s.push(`<text class="axis-label" x="${W/2}" y="${H-4}" text-anchor="middle">${FIELDS[fk].label}</text>`);
   s.push(`<text class="axis-label" transform="translate(12,${H/2}) rotate(-90)" text-anchor="middle">${FIELDS[fky].label}</text>`);
   const fset=new Set(f.map(c=>c.ticker));
-  pts.forEach(c=>{const e=eff(c);const ins=fset.has(c.ticker);
-    const cx=Math.max(pad.l,Math.min(W-pad.r,X(c[fk]))),cy=Math.max(pad.t,Math.min(H-pad.b,Y(c[fky])));
-    s.push(`<circle class="dot ${ins?'':'dim'}" cx="${cx}" cy="${cy}" r="${R(c[fks])}" fill="${HUE[e.vh]||'#999'}" data-tk="${c.ticker}"/>`);});
+  pts.forEach(c=>{const e=eff(c),ins=fset.has(c.ticker);
+    s.push(`<circle class="dot ${ins?'':'dim'}" cx="${Math.max(pad.l,Math.min(W-pad.r,X(c[fk])))}" cy="${Math.max(pad.t,Math.min(H-pad.b,Y(c[fky])))}" r="${R(c[fks])}" fill="${HUE[e.vh]||'#999'}" data-tk="${c.ticker}"/>`);});
   document.getElementById('scatter').innerHTML=s.join('');
   const tip=document.getElementById('tip'),box=document.querySelector('.scatterbox');
   document.querySelectorAll('#scatter .dot').forEach(d=>{
     d.addEventListener('mousemove',ev=>{const c=DATA.find(x=>x.ticker===d.dataset.tk),e=eff(c);
-      tip.innerHTML=`<b>${c.name}</b> · ${c.ticker}<br>${FIELDS[fk].label}: ${c[fk]}${FIELDS[fk].suf} · ${FIELDS[fky].label}: ${c[fky]}${FIELDS[fky].suf}<br>${FIELDS[fks].label}: ${c[fks]!=null?c[fks]+FIELDS[fks].suf:'—'} · ${e.vh}`;
-      const r=box.getBoundingClientRect();tip.style.left=Math.min(ev.clientX-r.left+12,r.width-240)+'px';
-      tip.style.top=(ev.clientY-r.top+12)+'px';tip.style.opacity=1;});
+      tip.innerHTML=`<b>${c.name}</b> · ${c.ticker}<br>${FIELDS[fk].label}: ${c[fk]}${FIELDS[fk].suf} · ${FIELDS[fky].label}: ${c[fky]}${FIELDS[fky].suf}<br>${e.vh}`;
+      const r=box.getBoundingClientRect();tip.style.left=Math.min(ev.clientX-r.left+12,r.width-220)+'px';tip.style.top=(ev.clientY-r.top+12)+'px';tip.style.opacity=1;});
     d.addEventListener('mouseleave',()=>tip.style.opacity=0);
-    d.addEventListener('click',()=>navDetail(d.dataset.tk));
-  });
+    d.addEventListener('click',()=>navDetail(d.dataset.tk));});
 }
 
-/* ---- table ---- */
+/* table */
 function renderTable(){
   const f=filtered().sort((a,b)=>{let x=a[state.sortK],y=b[state.sortK];
     if(state.sortK==='vh_class'){x=eff(a).vh;y=eff(b).vh;}if(x==null)x=-1e9;if(y==null)y=-1e9;
     if(typeof x==='string')return state.sortDir*x.localeCompare(y);return state.sortDir*(x-y);});
   const cls=v=>`<span class="cls" style="background:${HUE[v]||'#999'}"></span>`;
-  document.getElementById('tbody').innerHTML=f.map(c=>{const e=eff(c);let tagcell;
+  document.getElementById('tbody').innerHTML=f.map(c=>{const e=eff(c),hasNote=!!(notes[c.ticker]||'').trim();
+    let tagcell;
     if(state.edit){
       const vs=`<select class="tag" data-tk="${c.ticker}" data-field="vh_class">`+VH_OPTS.map(o=>`<option value="${o}" ${o===e.vh?'selected':''}>${o}</option>`).join('')+'</select>';
       const ps=`<select class="tag" data-tk="${c.ticker}" data-field="model_purity">`+PUR_OPTS.map(o=>`<option value="${o}" ${o===e.purity?'selected':''}>${o}</option>`).join('')+'</select>';
       tagcell=`<div class="editcell">${vs}${ps}<label><input type="checkbox" data-tk="${c.ticker}" data-field="review" ${e.review?'checked':''}> review</label></div>`;
     }else{tagcell=`${cls(e.vh)}${e.vh.slice(0,5)}${e.clean?'':` <span class="badge" style="background:${PURCLR[e.purity]||'#999'}">${e.purity.split('-')[0]}</span>`}`;}
     return `<tr class="${e.clean?'':'notclean'} ${e.edited?'edited':''}">
-      <td class="l"><a class="tk" href="#/${c.ticker}">${c.ticker}</a> <span class="nm">${c.name}</span>${e.review?' <span class="rev" title="flagged">▲</span>':''}${e.edited?'<span class="edot" title="edited"></span>':''}</td>
+      <td class="l"><a class="tk" href="#/${c.ticker}">${c.ticker}</a> <span class="nm">${c.name}</span>${e.review?' <span class="rev" title="flagged">▲</span>':''}${e.edited?'<span class="edot" title="edited"></span>':''}${hasNote?'<span class="ndot" title="has notes">✎</span>':''}</td>
       <td class="l">${tagcell}</td><td>${c.ev_rev}x</td>
       <td class="${c.rev_growth>=0?'pos':'neg'}">${c.rev_growth}</td><td>${c.gross_margin}</td>
       <td class="${c.ebitda_margin>=0?'':'neg'}">${c.ebitda_margin}</td><td><b>${c.r40_ebitda}</b></td>
@@ -314,18 +298,44 @@ function renderTable(){
       <td class="${c.ytd_change>=0?'pos':'neg'}">${c.ytd_change}</td></tr>`;}).join('');
   document.querySelectorAll('#tbl thead th').forEach(th=>th.classList.toggle('sort',th.dataset.k===state.sortK));}
 
-/* ---- detail view ---- */
+/* detail */
+function swotBox(items,label,cls){
+  return `<div class="swot-box ${cls}"><div class="swot-label ${cls}">${label}</div>${
+    items&&items.length?items.map(t=>`<div class="swot-item">${t}</div>`).join(''):'<div class="empty-state">No data yet</div>'}</div>`;}
+
 function renderDetail(tk){
   const c=DATA.find(x=>x.ticker===tk);if(!c)return;
-  const e=eff(c),en=ENRICH[tk]||{},ex=en.ai_excerpts||[];
-  const desc=en.description||'No description yet — add one to data/enrichments.json.';
+  const e=eff(c),en=ENRICH[tk]||{},call=en.latest_call||null;
+  const desc=en.description||'No description yet.';
   const fmt=(v,s)=>v!=null?v+s:'—';
-  const cats={strength:[],opportunity:[],weakness:[],threat:[]};
-  ex.forEach(x=>{if(cats[x.category])cats[x.category].push(x);});
-  const swotBox=(cat,label,cls)=>{const items=cats[cat];
-    return `<div class="swot-box ${cls}"><div class="swot-label ${cls}">${label}</div>${
-      items.length?items.map(x=>`<div class="excerpt"><div class="eq">"${x.text}"</div><div class="esrc">— ${x.speaker||'Unknown'} · ${x.quarter||''}</div></div>`).join('')
-      :'<div class="empty-state">No excerpts yet</div>'}</div>`;};
+  const note=notes[tk]||'';
+
+  let callHTML='';
+  if(call){
+    const os=call.overall_swot||{},as=call.ai_swot||{};
+    callHTML=`
+      <div class="section-head">Earnings Call Takeaways <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-soft);font-weight:400">${call.quarter||''}${call.date?' · '+call.date:''}</span></div>
+      <div class="section-sub">Key takeaways from management commentary and analyst Q&A</div>
+      <div class="swot-grid">
+        ${swotBox(os.strengths,'Strengths','str')}${swotBox(os.weaknesses,'Weaknesses','weak')}
+        ${swotBox(os.opportunities,'Opportunities','opp')}${swotBox(os.threats,'Threats','thr')}
+      </div>
+      <hr class="divider">
+      <div class="section-head">AI-Specific Impact</div>
+      <div class="section-sub">How AI affects this business — from earnings call commentary and analyst assessment</div>
+      <div class="swot-grid">
+        ${swotBox(as.strengths,'Strengths','str')}${swotBox(as.weaknesses,'Weaknesses','weak')}
+        ${swotBox(as.opportunities,'Opportunities','opp')}${swotBox(as.threats,'Threats','thr')}
+      </div>
+      ${call.transcript&&!call.transcript.startsWith('[Full transcript')?`
+        <hr class="divider">
+        <button class="transcript-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.textContent=this.nextElementSibling.classList.contains('open')?'▾ Hide Full Transcript':'▸ Read Full Transcript'">▸ Read Full Transcript</button>
+        <div class="transcript-body">${call.transcript.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>
+      `:''}`;
+  }else{
+    callHTML=`<div class="section-head">Earnings Call Takeaways</div>
+      <div class="empty-state" style="margin-bottom:20px">No earnings call data yet. Add overall and AI-specific SWOT takeaways to <code>data/enrichments.json</code> under the "${tk}" key.</div>`;}
+
   document.getElementById('detail-content').innerHTML=`
     <div class="detail-head"><h2>${c.name}</h2><span class="dtk">${c.ticker}</span>
       <span class="badge" style="background:${HUE[e.vh]||'#999'};font-size:11px;padding:3px 8px">${e.vh}</span>
@@ -341,15 +351,27 @@ function renderDetail(tk){
       <div class="metric"><div class="mlab">YTD Change</div><div class="mval ${(c.ytd_change||0)>=0?'pos':'neg'}">${fmt(c.ytd_change,'%')}</div></div>
       <div class="metric"><div class="mlab">Market Cap</div><div class="mval">$${c.mcap_m>=1000?(c.mcap_m/1000).toFixed(1)+'B':c.mcap_m+'M'}</div></div>
     </div>
-    <div class="swot-title">AI Earnings Commentary</div>
-    ${ex.length?'':`<div class="empty-state" style="margin-bottom:20px">No AI-related earnings excerpts yet. Add them to <code>data/enrichments.json</code> under the "${tk}" key, categorized as strength / weakness / opportunity / threat.</div>`}
-    <div class="swot-grid">
-      ${swotBox('strength','Strengths','str')}${swotBox('opportunity','Opportunities','opp')}
-      ${swotBox('weakness','Weaknesses','weak')}${swotBox('threat','Threats','thr')}
+    ${callHTML}
+    <div class="notes-box">
+      <div class="nlab"><span>Your Notes</span><span class="nsaved" id="nsaved">saved ✓</span></div>
+      <textarea id="note-input" placeholder="Add your notes, observations, or disagreements about this company…">${note.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</textarea>
     </div>`;
+
+  // wire notes auto-save
+  const inp=document.getElementById('note-input');
+  let saveTimer;
+  inp.addEventListener('input',()=>{
+    clearTimeout(saveTimer);
+    saveTimer=setTimeout(()=>{
+      const val=inp.value.trim();
+      if(val)notes[tk]=val;else delete notes[tk];
+      sv('comps_notes_v1',notes);
+      const s=document.getElementById('nsaved');s.style.opacity=1;setTimeout(()=>s.style.opacity=0,1500);
+    },400);
+  });
 }
 
-/* ---- routing ---- */
+/* routing */
 function navMain(){location.hash='';route();}
 function navDetail(tk){location.hash='#/'+tk;route();}
 function route(){
@@ -357,31 +379,16 @@ function route(){
   if(h&&DATA.find(c=>c.ticker===h)){
     document.getElementById('main-view').style.display='none';document.getElementById('detail-view').style.display='block';
     renderDetail(h);window.scrollTo(0,0);
-  }else{
-    document.getElementById('main-view').style.display='block';document.getElementById('detail-view').style.display='none';}}
+  }else{document.getElementById('main-view').style.display='block';document.getElementById('detail-view').style.display='none';}}
 window.addEventListener('hashchange',route);
 
-/* ---- editing ---- */
+/* editing */
 document.getElementById('tbody').addEventListener('change',ev=>{const el=ev.target,tk=el.dataset.tk,fld=el.dataset.field;if(!tk||!fld)return;setOvr(tk,fld,fld==='review'?el.checked:el.value);});
 document.getElementById('edit-toggle').addEventListener('click',()=>{state.edit=!state.edit;
   document.getElementById('edit-toggle').textContent=state.edit?'✓ Done editing':'✎ Edit tags';
   document.getElementById('edit-hint').style.display=state.edit?'inline':'none';renderTable();});
 
-/* ---- submit ---- */
-const nameIn=document.getElementById('rev-name');nameIn.value=ld('comps_reviewer','')||'';
-nameIn.addEventListener('input',()=>sv('comps_reviewer',nameIn.value));
-document.getElementById('submit-btn').addEventListener('click',async()=>{
-  const st=document.getElementById('sub-status'),rev=nameIn.value.trim();
-  if(!rev){st.className='submit-status err';st.textContent='enter your name first';return;}
-  if(WORKER_URL.startsWith('PASTE_')){st.className='submit-status err';st.textContent='backend not configured';return;}
-  const tags={};DATA.forEach(c=>{const e=eff(c);tags[c.ticker]={vh_class:e.vh,model_purity:e.purity,review:e.review};});
-  st.className='submit-status';st.textContent='submitting…';
-  try{const r=await fetch(WORKER_URL.replace(/\/$/,'')+'/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({reviewer:rev,tags})});
-    const j=await r.json();if(j.ok){st.className='submit-status ok';st.textContent=`saved ${j.saved} tags ✓`;}
-    else{st.className='submit-status err';st.textContent=j.error||'failed';}}
-  catch(e){st.className='submit-status err';st.textContent='network error';}});
-
-/* ---- controls ---- */
+/* controls */
 function bindSeg(id,key){document.getElementById(id).addEventListener('click',e=>{if(e.target.tagName!=='BUTTON')return;
   document.querySelectorAll('#'+id+' button').forEach(b=>b.classList.remove('on'));e.target.classList.add('on');state[key]=e.target.dataset.v;render();});}
 bindSeg('seg-class','cls');bindSeg('seg-growth','growth');
@@ -390,22 +397,6 @@ document.getElementById('review-only').addEventListener('change',e=>{state.revie
 document.getElementById('search').addEventListener('input',e=>{state.q=e.target.value;render();});
 document.querySelectorAll('#tbl thead th').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k;
   if(state.sortK===k)state.sortDir*=-1;else{state.sortK=k;state.sortDir=(k==='ticker'||k==='vh_class')?1:-1;}renderTable();}));
-
-/* ---- admin ---- */
-async function maybeAdmin(){const key=new URLSearchParams(location.search).get('admin');if(!key)return;
-  const panel=document.getElementById('admin'),body=document.getElementById('admin-body');panel.style.display='block';
-  if(WORKER_URL.startsWith('PASTE_')){body.innerHTML='Backend not configured.';return;}
-  try{const r=await fetch(WORKER_URL.replace(/\/$/,'')+'/list?key='+encodeURIComponent(key));const j=await r.json();
-    if(j.error){body.innerHTML=j.error;return;}if(!j.reviewers.length){body.innerHTML='<em>No submissions yet.</em>';return;}
-    body.innerHTML=j.reviewers.map(rec=>{const diffs=[];
-      for(const tk in rec.tags){const b=BASE[tk];if(!b)continue;const t=rec.tags[tk];const p=[];
-        if(t.vh_class!==b.vh_class)p.push(`class ${b.vh_class}→<b>${t.vh_class}</b>`);
-        if(t.model_purity!==b.model_purity)p.push(`purity ${b.model_purity}→<b>${t.model_purity}</b>`);
-        if(t.review!==b.review)p.push(`review ${b.review}→<b>${t.review}</b>`);
-        if(p.length)diffs.push(`<div><b>${tk}</b>: ${p.join(' · ')}</div>`);}
-      return `<div class="rev-card"><div class="rev-head">${rec.reviewer} · ${(rec.updated||'').slice(0,16).replace('T',' ')}</div>
-        <div class="diff">${diffs.length?diffs.join(''):'<em>no changes</em>'}</div></div>`;}).join('');
-  }catch(e){body.innerHTML='Could not reach backend.';}}
 </script>
 </body>
 </html>
