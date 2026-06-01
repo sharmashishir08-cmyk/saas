@@ -112,6 +112,7 @@ select.tag{font-family:"JetBrains Mono",monospace;font-size:10.5px;padding:2px 3
 .swot-item{font-size:14px;line-height:1.5;margin-bottom:8px;padding-left:12px;border-left:2px solid var(--rule-soft)}
 .swot-item:last-child{margin-bottom:0}
 .empty-state{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink-soft);font-style:italic;padding:4px 0}
+.caveat{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--rule-soft);border-radius:3px;padding:8px 12px;margin-bottom:14px;line-height:1.6}
 .divider{border:none;border-top:1px solid var(--rule);margin:30px 0}
 
 /* transcript accordion */
@@ -315,6 +316,7 @@ function renderDetail(tk){
     const os=call.overall_swot||{},as=call.ai_swot||{};
     callHTML=`
       <div class="section-head">Earnings Call Takeaways <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-soft);font-weight:400">${call.quarter||''}${call.date?' · '+call.date:''}</span></div>
+      <div class="caveat">Source: ${call.quarter||'Latest'} earnings call${call.date?' ('+call.date+')':''}. Takeaways synthesized by Claude — AI-generated analysis based on public earnings commentary. Verify against the source transcript before relying on any specific claim.</div>
       <div class="section-sub">Key takeaways from management commentary and analyst Q&A</div>
       <div class="swot-grid">
         ${swotBox(os.strengths,'Strengths','str')}${swotBox(os.weaknesses,'Weaknesses','weak')}
@@ -322,7 +324,7 @@ function renderDetail(tk){
       </div>
       <hr class="divider">
       <div class="section-head">AI-Specific Impact</div>
-      <div class="section-sub">How AI affects this business — from earnings call commentary and analyst assessment</div>
+      <div class="section-sub">How AI affects this business — synthesized by Claude from earnings commentary and public analysis</div>
       <div class="swot-grid">
         ${swotBox(as.strengths,'Strengths','str')}${swotBox(as.weaknesses,'Weaknesses','weak')}
         ${swotBox(as.opportunities,'Opportunities','opp')}${swotBox(as.threats,'Threats','thr')}
